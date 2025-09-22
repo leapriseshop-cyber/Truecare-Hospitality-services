@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrueCare Hospitality & Facilities Pvt Ltd - Premium Hotel Services</title>
+    <meta name="description" content="Experience premium hospitality at TrueCare. Luxury accommodations, exceptional service, and world-class facilities.">
+    <meta name="keywords" content="hotel, hospitality, accommodation, booking, TrueCare, facilities, premium, service">
+    <meta name="author" content="TrueCare Hospitality & Facilities Pvt Ltd">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="TrueCare Hospitality & Facilities Pvt Ltd">
+    <meta property="og:description" content="Experience premium hospitality with comfortable accommodations and exceptional service.">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="nav-brand">
+                    <img src="images/logo.png" alt="TrueCare Logo" class="logo-img" onerror="this.style.display='none'">
+                    <h2 class="brand-text">TrueCare Hospitality</h2>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#facilities" class="nav-link">Facilities</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#booking" class="nav-link btn-book-nav">Book Now</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <h1 class="hero-title">Experience Premium Hospitality</h1>
+                    <p class="hero-subtitle">Your comfort is our priority. Discover luxury accommodations and exceptional service at TrueCare Hospitality.</p>
+                    <div class="hero-buttons">
+                        <a href="#booking" class="btn btn-primary btn-lg">Book Your Stay</a>
+                        <a href="#facilities" class="btn btn-secondary btn-lg">Explore Facilities</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About TrueCare Hospitality</h2>
+                <p>Dedicated to providing exceptional hospitality services with a focus on comfort, quality, and customer satisfaction.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>To create memorable experiences for our guests through outstanding service, comfortable accommodations, and attention to detail.</p>
+                    
+                    <h3>Our Vision</h3>
+                    <p>To be the preferred choice for hospitality services, known for our commitment to excellence and guest satisfaction.</p>
+                    
+                    <div class="stats">
+                        <div class="stat">
+                            <h4>500+</h4>
+                            <p>Happy Guests</p>
+                        </div>
+                        <div class="stat">
+                            <h4>50+</h4>
+                            <p>Premium Rooms</p>
+                        </div>
+                        <div class="stat">
+                            <h4>24/7</h4>
+                            <p>Customer Service</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="facilities">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Facilities</h2>
+                <p>Experience world-class amenities designed for your comfort and convenience.</p>
+            </div>
+            <div class="facilities-grid">
+                <div class="facility-card">
+                    <div class="facility-icon">🏊‍♂️</div>
+                    <h3>Swimming Pool</h3>
+                    <p>Relax and unwind in our pristine swimming pool with poolside service.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">🍽️</div>
+                    <h3>Fine Dining</h3>
+                    <p>Enjoy exquisite cuisine at our multi-cuisine restaurant with expert chefs.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">💪</div>
+                    <h3>Fitness Center</h3>
+                    <p>Stay fit with our fully equipped gymnasium and wellness facilities.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">🚗</div>
+                    <h3>Parking</h3>
+                    <p>Complimentary parking available for all guests with 24/7 security.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">📶</div>
+                    <h3>Free Wi-Fi</h3>
+                    <p>High-speed internet connectivity throughout the property.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">🛎️</div>
+                    <h3>Concierge</h3>
+                    <p>24/7 concierge service to assist with all your needs and requests.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Photo Gallery</h2>
+                <p>Take a virtual tour of our beautiful facilities and accommodations.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openModal('images/hotel-exterior.jpg', 'Hotel Exterior', 'Beautiful hotel exterior with modern architecture')">
+                    <img src="images/hotel-exterior.jpg" alt="Hotel Exterior" class="gallery-img" onerror="this.src='https://via.placeholder.com/400x300/2c3e50/ffffff?text=Hotel+Exterior'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-content">
+                            <span class="gallery-view-icon">👁️</span>
+                            <span class="gallery-view-text">View</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal('images/deluxe-room.jpg', 'Deluxe Room', 'Spacious deluxe room with premium amenities')">
+                    <img src="images/deluxe-room.jpg" alt="Deluxe Room" class="gallery-img" onerror="this.src='https://via.placeholder.com/400x300/2c3e50/ffffff?text=Deluxe+Room'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-content">
+                            <span class="gallery-view-icon">👁️</span>
+                            <span class="gallery-view-text">View</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal('images/restaurant.jpg', 'Restaurant', 'Fine dining restaurant with elegant ambiance')">
+                    <img src="images/restaurant.jpg" alt="Restaurant" class="gallery-img" onerror="this.src='https://via.placeholder.com/400x300/2c3e50/ffffff?text=Restaurant'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-content">
+                            <span class="gallery-view-icon">👁️</span>
+                            <span class="gallery-view-text">View</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal('images/pool.jpg', 'Swimming Pool', 'Refreshing swimming pool with lounge area')">
+                    <img src="images/pool.jpg" alt="Swimming Pool" class="gallery-img" onerror="this.src='https://via.placeholder.com/400x300/2c3e50/ffffff?text=Swimming+Pool'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-content">
+                            <span class="gallery-view-icon">👁️</span>
+                            <span class="gallery-view-text">View</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div id="gallery-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image" src="" alt="">
+            <div class="modal-caption">
+                <h3 id="modal-title"></h3>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Book Your Stay</h2>
+                <p>Reserve your room today and experience premium hospitality.</p>
+            </div>
+            <div class="booking-content">
+                <div class="booking-info">
+                    <h3>Why Choose TrueCare?</h3>
+                    <ul>
+                        <li>✓ Premium accommodations with modern amenities</li>
+                        <li>✓ 24/7 customer service and support</li>
+                        <li>✓ Prime location with easy accessibility</li>
+                        <li>✓ Competitive pricing with no hidden charges</li>
+                        <li>✓ Flexible booking and cancellation policies</li>
+                    </ul>
+                </div>
+                <div class="booking-form-container">
+                    <form id="booking-form" class="form">
+                        <div class="form-header">
+                            <h3>Book Your Stay</h3>
+                            <p>Fill out this form to inquire about room availability and make a reservation.</p>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="booking-name">Full Name *</label>
+                                <input type="text" id="booking-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-email">Email Address *</label>
+                                <input type="email" id="booking-email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="booking-phone">Phone Number *</label>
+                                <input type="tel" id="booking-phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-guests">Number of Guests *</label>
+                                <select id="booking-guests" name="guests" required>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                    <option value="5">5 Guests</option>
+                                    <option value="6">6 Guests</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="checkin">Check-in Date *</label>
+                                <input type="date" id="checkin" name="checkin" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="checkout">Check-out Date *</label>
+                                <input type="date" id="checkout" name="checkout" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="room-type">Preferred Room Type *</label>
+                            <select id="room-type" name="roomType" required>
+                                <option value="">Select room type</option>
+                                <option value="standard">Standard Room</option>
+                                <option value="deluxe">Deluxe Room</option>
+                                <option value="suite">Executive Suite</option>
+                                <option value="family">Family Room</option>
+                                <option value="presidential">Presidential Suite</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="special-requests">Special Requests (Optional)</label>
+                            <textarea id="special-requests" name="specialRequests" rows="4" placeholder="Any special requirements or requests..."></textarea>
+                        </div>
+
+                        <div class="form-footer">
+                            <p class="form-note">* Required fields. We'll contact you within 24 hours to confirm your booking.</p>
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <span class="btn-text">Submit Booking Inquiry</span>
+                                <span class="btn-loader" style="display: none;">
+                                    <span class="spinner"></span>
+                                    Submitting...
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div id="booking-success" class="success-message" style="display: none;">
+                        <div class="success-icon">✅</div>
+                        <h3>Booking Inquiry Submitted Successfully!</h3>
+                        <p>Thank you for your interest in TrueCare Hospitality. We have received your booking inquiry and will contact you within 24 hours to confirm your reservation.</p>
+                        <button onclick="resetBookingForm()" class="btn btn-primary">Make Another Inquiry</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Location</h2>
+                <p>Conveniently located with easy access to major attractions and transportation.</p>
+            </div>
+            <div class="location-content">
+                <div class="location-info">
+                    <h3>Address</h3>
+                    <p>TrueCare Hospitality & Facilities Pvt Ltd<br>
+                    [Your Hotel Address]<br>
+                    [City, State - PIN Code]<br>
+                    India</p>
+                    
+                    <h3>Contact Information</h3>
+                    <p><strong>Phone:</strong> +91-XXXX-XXXXXX<br>
+                    <strong>Email:</strong> info@truecare-hospitality.com<br>
+                    <strong>Website:</strong> www.truecare-hospitality.com</p>
+
+                    <h3>Nearby Attractions</h3>
+                    <ul>
+                        <li>Shopping Mall - 2 km</li>
+                        <li>Railway Station - 5 km</li>
+                        <li>Airport - 15 km</li>
+                        <li>City Center - 3 km</li>
+                    </ul>
+                </div>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <div class="map-icon">📍</div>
+                        <h3>Location Map</h3>
+                        <p>Map will be displayed here once configured with Google Maps embed URL.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us for any inquiries or assistance.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <h3>📞 Call Us</h3>
+                        <p>Speak directly with our customer service team</p>
+                        <a href="tel:+91XXXXXXXXXX" class="btn btn-outline">Call Now</a>
+                    </div>
+                    <div class="contact-method">
+                        <h3>💬 WhatsApp</h3>
+                        <p>Chat with us instantly on WhatsApp</p>
+                        <button onclick="openWhatsApp()" class="btn btn-whatsapp">Chat on WhatsApp</button>
+                    </div>
+                    <div class="contact-method">
+                        <h3>✉️ Email</h3>
+                        <p>Send us a detailed message and we'll respond promptly</p>
+                        <a href="mailto:info@truecare-hospitality.com" class="btn btn-outline">Send Email</a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form id="contact-form" class="form">
+                        <div class="form-header">
+                            <h3>Send us a Message</h3>
+                            <p>Have questions or need assistance? We're here to help!</p>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">Full Name *</label>
+                                <input type="text" id="contact-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email Address *</label>
+                                <input type="email" id="contact-email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-subject">Subject *</label>
+                            <select id="contact-subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="booking">Booking Inquiry</option>
+                                <option value="support">Customer Support</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="complaint">Complaint</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message">Message *</label>
+                            <textarea id="contact-message" name="message" rows="6" placeholder="Please describe your inquiry or message in detail..." required></textarea>
+                        </div>
+
+                        <div class="form-footer">
+                            <p class="form-note">* Required fields. We typically respond within 24 hours during business days.</p>
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loader" style="display: none;">
+                                    <span class="spinner"></span>
+                                    Sending...
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div id="contact-success" class="success-message" style="display: none;">
+                        <div class="success-icon">✅</div>
+                        <h3>Message Sent Successfully!</h3>
+                        <p>Thank you for contacting TrueCare Hospitality. We have received your message and will respond within 24 hours.</p>
+                        <button onclick="resetContactForm()" class="btn btn-primary">Send Another Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TrueCare Hospitality</h3>
+                    <p>Your trusted partner for premium hospitality services. Experience comfort, quality, and exceptional service.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#facilities">Facilities</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#booking">Room Booking</a></li>
+                        <li><a href="#facilities">Event Hosting</a></li>
+                        <li><a href="#contact">Customer Support</a></li>
+                        <li><a href="#facilities">Dining Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📍 [Your Hotel Address]</p>
+                    <p>📞 +91-XXXX-XXXXXX</p>
+                    <p>✉️ info@truecare-hospitality.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TrueCare Hospitality & Facilities Pvt Ltd. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cancellation Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <button onclick="openWhatsApp()" class="whatsapp-float-btn" aria-label="Contact us on WhatsApp">
+            💬
+        </button>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
