@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+
+# Important pages
+Allow: /index.html
+Allow: /style.css
+Allow: /script.js
+
+# Image resources
+Allow: /WhatsApp-Image-2025-09-24-at-12.48.04-1.jpg
+Allow: /favicon.ico
+
+# Block unnecessary files
+Disallow: /_redirects
+Disallow: /netlify.toml
+
+# Sitemap location
+Sitemap: https://truecarehandf.in/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Allow Google bots specifically
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
