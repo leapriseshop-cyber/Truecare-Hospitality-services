@@ -1,5 +1,11 @@
 /* ===== TRUECARE H&F - FINAL OPTIMIZED CSS ===== */
 /* Fixed ALL UX, Dark Mode, and Responsive Issues */
+:root { --header-h: 80px; }
+html { scroll-padding-top: var(--header-h); }
+section { scroll-margin-top: var(--header-h); }
+@media (max-width: 500px) {
+  :root { --header-h: 70px; }
+}
 
 :root {
   /* Core Colors */
