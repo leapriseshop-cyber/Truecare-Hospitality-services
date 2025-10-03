@@ -1,1183 +1,2435 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="https://schema.org/HotelChain">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- PRIMARY RANKING TITLE (65 characters max) -->
-<title>TrueCare Hospitality Delhi NCR | Hotels, B2B Management, Greentech</title>
-
-<!-- CONVERSION-FOCUSED DESCRIPTION (155 characters max) -->
-<meta name="description" content="TrueCare: 25+ Hotels (Elite Grand, Anvi Residency), B2B Hotel Management Services & STP/ETP Greentech Facilities in Delhi NCR. Book now +91-8700401489">
-
-<!-- HIGH-INTENT TARGET KEYWORDS -->
-<meta name="keywords" content="hotels Delhi NCR, hotel management companies India, B2B hospitality services, STP ETP O&M Delhi, Elite Grand Noida, Anvi Residency, facilities management NCR, corporate hotels Gurgaon, water treatment facilities, hospitality consulting">
-
-<meta name="author" content="TrueCare Hospitality and Facilities Pvt Ltd">
-<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-<link rel="canonical" href="https://www.truecarehandf.in/">
-
-<!-- SOCIAL MEDIA OPTIMIZATION -->
-<meta property="og:title" content="TrueCare Hospitality | 25+ Hotels Delhi NCR | B2B Management | Greentech">
-<meta property="og:description" content="Leading hospitality company: Direct hotel bookings, B2B management services, and industrial water treatment across Delhi NCR & India.">
-<meta property="og:url" content="https://www.truecarehandf.in/">
-<meta property="og:image" content="https://www.truecarehandf.in/assets/images/https://github.com/leapriseshop-cyber/Truecare-Hospitality-services/blob/main/Truecare%20logo.jpg">
-<meta property="og:site_name" content="TrueCare Hospitality and Facilities">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="TrueCare: Hotels Delhi NCR | B2B Hospitality | Water Solutions">
-<meta name="twitter:description" content="Book hotels, partner with hospitality experts, get water treatment solutions. Service with relentless integrity.">
-<meta name="twitter:image" content="https://www.truecarehandf.in/assets/images/https://github.com/leapriseshop-cyber/Truecare-Hospitality-services/blob/main/Truecare%20logo.jpg">
-
-<link rel="icon" href="/favicon.ico">
-
-<!-- FONT AWESOME FOR ICONS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-<!-- RESPONSIVE CSS WITH DARK MODE SUPPORT -->
-<style>
-:root {
-  --primary-color: #1a2636;
-  --accent-color: #f57921;
-  --success-color: #2d7a3e;
-  --bg-color: #ffffff;
-  --text-color: #333333;
-  --text-light: #666666;
-  --card-bg: #ffffff;
-  --border-color: #e2e8f0;
-  --shadow-color: rgba(0,0,0,0.1);
-}
-
-[data-theme="dark"] {
-  --primary-color: #2d4a5c;
-  --accent-color: #ff8c42;
-  --success-color: #4ade80;
-  --bg-color: #0f172a;
-  --text-color: #f1f5f9;
-  --text-light: #94a3b8;
-  --card-bg: #1e293b;
-  --border-color: #334155;
-  --shadow-color: rgba(0,0,0,0.3);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  line-height: 1.6;
-  color: var(--text-color);
-  background-color: var(--bg-color);
-  transition: all 0.3s ease;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* HEADER STYLES */
-.site-header {
-  background: var(--card-bg);
-  box-shadow: 0 2px 10px var(--shadow-color);
-  padding: 16px 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  transition: all 0.3s ease;
-}
-
-.header-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.logo-section {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.logo-section img {
-  border-radius: 12px;
-  box-shadow: 0 4px 15px var(--shadow-color);
-  transition: transform 0.3s ease;
-}
-
-.logo-section img:hover {
-  transform: scale(1.05);
-}
-
-.brand-text h1 {
-  font-size: 1.4rem;
-  color: var(--primary-color);
-  margin: 0;
-}
-
-.brand-text p {
-  font-size: 0.8rem;
-  color: var(--accent-color);
-  font-weight: bold;
-  margin: 0;
-}
-
-/* NAVIGATION */
-.main-nav {
-  display: flex;
-  gap: 32px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.nav-link {
-  color: var(--text-color);
-  font-weight: 500;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  padding: 8px 0;
-}
-
-.nav-link:hover {
-  color: var(--accent-color);
-}
-
-.btn {
-  padding: 12px 24px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-  transition: all 0.3s ease;
-  border: none;
-  cursor: pointer;
-  text-align: center;
-}
-
-.btn-primary {
-  background: var(--accent-color);
-  color: white;
-}
-
-.btn-primary:hover {
-  background: #e06a1c;
-  transform: translateY(-2px);
-}
-
-.btn-secondary {
-  background: var(--primary-color);
-  color: white;
-}
-
-.btn-secondary:hover {
-  background: #243441;
-  transform: translateY(-2px);
-}
-
-/* HERO SECTION */
-.hero {
-  background: linear-gradient(135deg, var(--primary-color) 0%, #2d4a5c 100%);
-  color: white;
-  padding: 100px 20px;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 3.2rem;
-  margin-bottom: 24px;
-  line-height: 1.2;
-}
-
-.hero-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 32px;
-  margin: 40px 0;
-}
-
-.hero-card {
-  background: rgba(255,255,255,0.1);
-  padding: 32px;
-  border-radius: 16px;
-  backdrop-filter: blur(10px);
-  transition: transform 0.3s ease;
-}
-
-.hero-card:hover {
-  transform: translateY(-5px);
-}
-
-.hero-card h3 {
-  color: var(--accent-color);
-  margin-bottom: 16px;
-  font-size: 1.5rem;
-}
-
-.cta-buttons {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 32px;
-}
-
-/* SECTION STYLES */
-section {
-  padding: 80px 20px;
-}
-
-.section-bg {
-  background: var(--bg-color);
-}
-
-.section-alt {
-  background: #f8fafe;
-}
-
-.section-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.section-header h2 {
-  font-size: 2.8rem;
-  color: var(--primary-color);
-  margin-bottom: 16px;
-}
-
-.section-header p {
-  font-size: 1.3rem;
-  color: var(--text-light);
-}
-
-/* GRID LAYOUTS */
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-  gap: 32px;
-}
-
-.hotel-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 24px;
-}
-
-.service-card, .hotel-card {
-  background: var(--card-bg);
-  padding: 24px;
-  border-radius: 16px;
-  box-shadow: 0 8px 30px var(--shadow-color);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-card:hover, .hotel-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 40px var(--shadow-color);
-}
-
-.service-card h3, .hotel-card h3 {
-  color: var(--accent-color);
-  font-size: 1.4rem;
-  margin-bottom: 12px;
-}
-
-.service-card h4, .hotel-card h4 {
-  color: var(--primary-color);
-  font-size: 1.2rem;
-  margin-bottom: 8px;
-}
-
-.service-card p, .hotel-card p {
-  color: var(--text-light);
-  line-height: 1.6;
-  margin-bottom: 12px;
-  font-size: 0.95rem;
-}
-
-.location-tag {
-  color: var(--accent-color);
-  font-weight: bold;
-  font-size: 0.9rem;
-  margin-bottom: 8px;
-  display: block;
-}
-
-/* SOCIAL ICONS */
-.social-icons {
-  display: flex;
-  gap: 16px;
-  margin-top: 20px;
-  justify-content: center;
-}
-
-.social-icon {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 1.2rem;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.social-icon.facebook {
-  background: #1877f2;
-}
-
-.social-icon.instagram {
-  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-}
-
-.social-icon:hover {
-  transform: translateY(-3px) scale(1.1);
-}
-
-/* FORM STYLES */
-.contact-form {
-  background: var(--primary-color);
-  color: white;
-  padding: 80px 20px;
-}
-
-.form-container {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.form-grid {
-  display: grid;
-  gap: 20px;
-  text-align: left;
-  margin-top: 40px;
-}
-
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-  color: var(--accent-color);
-}
-
-.form-control {
-  width: 100%;
-  padding: 16px;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  background: white;
-  color: #333;
-}
-
-.form-control:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(245, 121, 33, 0.3);
-}
-
-/* FOOTER */
-.site-footer {
-  background: #0f1419;
-  color: white;
-  padding: 60px 20px 40px;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 50px;
-  margin-bottom: 50px;
-}
-
-.footer-section h4 {
-  color: var(--accent-color);
-  margin-bottom: 20px;
-  font-size: 1.4rem;
-}
-
-.footer-links {
-  display: grid;
-  gap: 12px;
-}
-
-.footer-links a {
-  color: rgba(255,255,255,0.8);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-  color: var(--accent-color);
-}
-
-.footer-bottom {
-  text-align: center;
-  padding-top: 40px;
-  border-top: 1px solid #333;
-}
-
-/* DARK MODE TOGGLE */
-.theme-toggle {
-  background: var(--card-bg);
-  border: 2px solid var(--border-color);
-  border-radius: 20px;
-  padding: 8px 16px;
-  cursor: pointer;
-  color: var(--text-color);
-  font-size: 0.9rem;
-  transition: all 0.3s ease;
-}
-
-.theme-toggle:hover {
-  background: var(--accent-color);
-  color: white;
-}
-
-/* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.2rem;
-  }
+  <!-- Core Meta -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- AI-First SEO 2025 -->
+  <title>TrueCare Hotels, Hospitality, Facilities & Services | Luxury Hotels, Events, Hotel Management, Greentech India</title>
+  <meta name="description" content="India's trusted hospitality brand with 25+ hotels, weddings & MICE, hotel management & revenue growth, and STP/ETP/WTP/RO greentech solutions across India. Direct booking benefits and expert consulting." />
   
-  .section-header h2 {
-    font-size: 2.2rem;
-  }
-  
-  .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-  
-  .service-grid, .hotel-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-  
-  .main-nav {
-    gap: 16px;
-    justify-content: center;
-  }
-  
-  .form-row {
-    grid-template-columns: 1fr;
-  }
-  
-  .cta-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .header-content {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-}
+  <!-- Technical SEO -->
+  <link rel="canonical" href="https://www.truecarehandf.in/">
+  <link rel="alternate" hreflang="en" href="https://www.truecarehandf.in/">
+  <link rel="alternate" hreflang="hi" href="https://www.truecarehandf.in/hi/">
+  <link rel="alternate" hreflang="x-default" href="https://www.truecarehandf.in/">
 
-@media (max-width: 480px) {
-  .hero {
-    padding: 60px 20px;
-  }
-  
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-  
-  section {
-    padding: 60px 20px;
-  }
-  
-  .service-card, .hotel-card {
-    padding: 20px;
-  }
-  
-  .btn {
-    padding: 12px 16px;
-    font-size: 0.9rem;
-  }
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TrueCare Hotels, Hospitality, Facilities & Services">
+  <meta property="og:description" content="India's trusted hospitality brand with 25+ hotels, weddings & MICE, hotel management & revenue growth, and STP/ETP/WTP/RO greentech solutions across India.">
+  <meta property="og:url" content="https://www.truecarehandf.in/">
+  <meta property="og:image" content="https://www.truecarehandf.in/Truecare-logo-2.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TrueCare Hotels, Hospitality, Facilities & Services">
+  <meta name="twitter:description" content="India's trusted hospitality brand - 25+ hotels, events, management, greentech">
+  <meta name="twitter:image" content="https://www.truecarehandf.in/Truecare-logo-2.jpg">
 
-  .logo-section img {
-    width: 50px;
-    height: 50px;
-  }
-}
+  <!-- Performance -->
+  <link rel="preload" as="image" href="Truecare-logo-2.jpg" imagesrcset="Truecare-logo-2.jpg 1x" imagesizes="(max-width: 600px) 160px, 220px">
+  <meta name="theme-color" content="#1e4a72">
 
-/* ACCESSIBILITY */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-}
+  <!-- Ultimate CSS with All Device Support -->
+  <style>
+    /* CSS Variables for Consistency */
+    :root {
+      --primary-trust: #1e4a72;
+      --primary-hover: #255787;
+      --conversion-orange: #ff6b35;
+      --conversion-hover: #e55a2b;
+      --luxury-teal: #21808d;
+      --trust-green: #10b981;
+      --attention-gold: #f59e0b;
+      --text-primary: #1f2937;
+      --text-secondary: #4b5563;
+      --bg-primary: #ffffff;
+      --bg-secondary: #f9fafb;
+      --space-sm: 8px;
+      --space-md: 16px;
+      --space-lg: 24px;
+      --space-xl: 32px;
+      --space-3xl: 64px;
+      --header-height: 85px;
+      --border-radius: 12px;
+      --shadow-md: 0 4px 6px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.06);
+      --shadow-lg: 0 10px 15px rgba(0,0,0,0.1), 0 4px 6px rgba(0,0,0,0.05);
+      --shadow-xl: 0 20px 25px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.04);
+    }
 
-/* HIGH CONTRAST MODE */
-@media (prefers-contrast: high) {
-  :root {
-    --shadow-color: rgba(0,0,0,0.5);
-  }
-  
-  .btn {
-    border: 2px solid currentColor;
-  }
-}
-</style>
+    /* Mobile-First Responsive Adjustments */
+    @media (max-width: 768px) {
+      :root {
+        --header-height: 75px;
+        --space-3xl: 48px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      :root {
+        --header-height: 70px;
+        --space-3xl: 32px;
+      }
+    }
+
+    /* Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: var(--header-height);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      color: var(--text-primary);
+      background: linear-gradient(135deg, #f8fafc 0%, #e3f2fd 25%, #f1f8e9 50%, #fff3e0 75%, #fce4ec 100%);
+      background-attachment: fixed;
+      background-size: 400% 400%;
+      animation: backgroundShift 15s ease-in-out infinite;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    @keyframes backgroundShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Header */
+    .site-header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: var(--header-height);
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+
+    .header-scrolled {
+      background: rgba(255, 255, 255, 0.98);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .header-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    /* Logo Section */
+    .logo-section {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .logo-img {
+      width: 65px;
+      height: 65px;
+      object-fit: contain;
+      border-radius: var(--border-radius);
+      padding: 4px;
+      background: white;
+      box-shadow: var(--shadow-md);
+      transition: all 0.3s ease;
+    }
+
+    .logo-img:hover {
+      transform: scale(1.05);
+    }
+
+    .brand-text h2 {
+      font-size: 20px;
+      color: var(--primary-trust);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 2px;
+    }
+
+    .brand-tagline {
+      font-size: 12px;
+      color: var(--conversion-orange);
+      font-weight: 600;
+      font-style: italic;
+    }
+
+    /* Navigation */
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .nav-link {
+      color: var(--text-primary);
+      font-weight: 500;
+      text-decoration: none;
+      padding: 12px 8px;
+      position: relative;
+      transition: all 0.3s ease;
+      border-radius: 6px;
+    }
+
+    .nav-link:hover {
+      color: var(--conversion-orange);
+      background: rgba(255, 107, 53, 0.1);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: var(--conversion-orange);
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+
+    .nav-link:hover::after {
+      width: 60%;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 24px;
+      border: none;
+      border-radius: var(--border-radius);
+      font-family: inherit;
+      font-weight: 600;
+      font-size: 15px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .btn:focus {
+      outline: 2px solid var(--conversion-orange);
+      outline-offset: 2px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--conversion-orange) 0%, var(--conversion-hover) 100%);
+      color: white;
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-xl);
+      background: linear-gradient(135deg, var(--conversion-hover) 0%, #cc5025 100%);
+    }
+
+    .btn-secondary {
+      background: linear-gradient(135deg, var(--primary-trust) 0%, var(--primary-hover) 100%);
+      color: white;
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-secondary:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--primary-trust);
+      border: 2px solid var(--primary-trust);
+    }
+
+    .btn-outline:hover {
+      background: var(--primary-trust);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    /* Mobile Menu */
+    .mobile-menu-toggle {
+      display: none;
+      background: var(--conversion-orange);
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .mobile-menu-toggle:hover {
+      background: var(--conversion-hover);
+      transform: scale(1.05);
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--primary-trust) 0%, var(--luxury-teal) 50%, var(--primary-hover) 100%);
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      color: white;
+      padding: var(--header-height) 24px 0;
+    }
+
+    .hero-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .hero-headline {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 900;
+      line-height: 1.1;
+      margin-bottom: 24px;
+      background: linear-gradient(135deg, white 0%, #f8fafc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-subheadline {
+      font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+      opacity: 0.9;
+      margin-bottom: 40px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 400;
+    }
+
+    /* Trust Indicators */
+    .trust-indicators {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 32px;
+      margin: 48px 0;
+      padding: 32px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .trust-indicator {
+      text-align: center;
+    }
+
+    .trust-number {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 900;
+      color: var(--attention-gold);
+      display: block;
+      line-height: 1;
+      margin-bottom: 8px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .trust-label {
+      font-size: 16px;
+      font-weight: 500;
+      opacity: 0.9;
+    }
+
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 48px;
+    }
+
+    /* Four Pillars Section */
+    .pillars-section {
+      padding: var(--space-3xl) 24px;
+      background: linear-gradient(135deg, #f0f7ff 0%, #e6f3ff 50%, #f8fafc 100%);
+    }
+
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .pillar-card {
+      background: var(--bg-primary);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: var(--shadow-lg);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border: 1px solid rgba(0,0,0,0.05);
+      position: relative;
+    }
+
+    .pillar-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(135deg, var(--conversion-orange), var(--attention-gold));
+      border-radius: 16px 16px 0 0;
+    }
+
+    .pillar-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+    }
+
+    .pillar-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .pillar-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--primary-trust);
+      margin-bottom: 16px;
+    }
+
+    .pillar-features {
+      list-style: none;
+      margin-bottom: 24px;
+    }
+
+    .pillar-features li {
+      padding: 6px 0;
+      position: relative;
+      padding-left: 20px;
+      color: var(--text-secondary);
+    }
+
+    .pillar-features li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--trust-green);
+      font-weight: bold;
+    }
+
+    /* Section Foundations */
+    section {
+      padding: var(--space-3xl) 24px;
+      position: relative;
+    }
+
+    .section-container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: var(--space-3xl);
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 800;
+      color: var(--primary-trust);
+      margin-bottom: 16px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(135deg, var(--conversion-orange), var(--attention-gold));
+      transform: translateX(-50%);
+      border-radius: 2px;
+    }
+
+    .section-subtitle {
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      color: var(--text-secondary);
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* Cards Grid */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 32px;
+      margin-top: var(--space-3xl);
+    }
+
+    .card {
+      background: var(--bg-primary);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border: 1px solid rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(135deg, var(--conversion-orange), var(--attention-gold));
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+      transform-origin: left;
+    }
+
+    .card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+    }
+
+    /* Hotel Shimmer Placeholders */
+    .card-image {
+      height: 220px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hotel-placeholder {
+      background: linear-gradient(90deg, #f0f0f0 25%, #e6e6e6 50%, #f0f0f0 75%);
+      background-size: 400% 100%;
+      animation: shimmer 1.5s infinite;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    @keyframes shimmer {
+      0% { background-position: -400px 0; }
+      100% { background-position: 400px 0; }
+    }
+
+    /* Category color variants */
+    .hotel-premium { background: linear-gradient(135deg, #ffe5e5 0%, #fff5f5 100%); animation: none; }
+    .hotel-business { background: linear-gradient(135deg, #e5f0ff 0%, #f5faff 100%); animation: none; }
+    .hotel-multi { background: linear-gradient(135deg, #e5ffe9 0%, #f5fff7 100%); animation: none; }
+    .hotel-corporate { background: linear-gradient(135deg, #e0f7fa 0%, #f1f8e9 100%); animation: none; }
+    .hotel-royal { background: linear-gradient(135deg, #f3e8ff 0%, #fdf6ff 100%); animation: none; }
+    .hotel-delhi { background: linear-gradient(135deg, #ede9fe 0%, #f8fafc 100%); animation: none; }
+    .hotel-resort { background: linear-gradient(135deg, #ecfdf5 0%, #f0fdfa 100%); animation: none; }
+    .hotel-kashmir { background: linear-gradient(135deg, #fdf2f8 0%, #f8fafc 100%); animation: none; }
+    .hotel-manali { background: linear-gradient(135deg, #eff6ff 0%, #f8fafc 100%); animation: none; }
+
+    .placeholder-content {
+      color: var(--text-primary);
+      font-weight: 600;
+      z-index: 2;
+      position: relative;
+    }
+
+    .hotel-icon {
+      font-size: clamp(28px, 8vw, 40px);
+      display: block;
+      margin-bottom: 8px;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    }
+
+    .placeholder-title {
+      font-size: clamp(14px, 4vw, 18px);
+      font-weight: 700;
+      margin: 0 0 4px 0;
+      line-height: 1.2;
+    }
+
+    .placeholder-location {
+      font-size: clamp(11px, 3vw, 13px);
+      opacity: 0.8;
+      font-weight: 500;
+    }
+
+    .card-content {
+      padding: 28px;
+    }
+
+    .card-category {
+      color: var(--conversion-orange);
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    .card-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--primary-trust);
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .card-description {
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+
+    .card-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .feature-tag {
+      background: #e6f4f6;
+      color: var(--luxury-teal);
+      padding: 4px 12px;
+      border-radius: 15px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .booking-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .btn-book {
+      background: linear-gradient(135deg, var(--conversion-orange) 0%, var(--conversion-hover) 100%);
+      color: white;
+      padding: 12px 20px;
+      border-radius: var(--border-radius);
+      font-weight: 600;
+      font-size: 14px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-book:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .btn-book::after {
+      content: '→';
+      margin-left: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .btn-book:hover::after {
+      transform: translateX(4px);
+    }
+
+    /* Contact Section */
+    .contact-section {
+      background: linear-gradient(135deg, var(--primary-trust) 0%, var(--luxury-teal) 100%);
+      color: white;
+    }
+
+    .contact-form-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: var(--space-3xl);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 24px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-label {
+      color: var(--attention-gold);
+      font-weight: 600;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .form-input {
+      padding: 14px 16px;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: var(--border-radius);
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      font-size: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .form-input:focus {
+      outline: none;
+      border-color: var(--attention-gold);
+      background: rgba(255, 255, 255, 0.15);
+      transform: translateY(-1px);
+    }
+
+    .form-input::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .form-textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .contact-item {
+      text-align: center;
+    }
+
+    .contact-item h4 {
+      color: var(--attention-gold);
+      font-weight: 600;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    .contact-item p {
+      opacity: 0.9;
+    }
+
+    .contact-item a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact-item a:hover {
+      color: var(--attention-gold);
+    }
+
+    /* Social Media */
+    .social-section {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .social-title {
+      color: var(--attention-gold);
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .social-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .social-icon.facebook {
+      background: linear-gradient(135deg, #1877f2 0%, #42a5f5 100%);
+    }
+
+    .social-icon.instagram {
+      background: linear-gradient(135deg, #e4405f 0%, #f77737 50%, #fcaf45 100%);
+    }
+
+    .social-icon:hover {
+      transform: translateY(-4px) scale(1.1);
+      box-shadow: var(--shadow-xl);
+    }
+
+    /* Footer */
+    .site-footer {
+      background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+      color: white;
+      padding: var(--space-3xl) 24px 32px;
+    }
+
+    .footer-content {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-section h4 {
+      color: var(--attention-gold);
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      padding: 4px 0;
+    }
+
+    .footer-links a:hover {
+      color: var(--attention-gold);
+      padding-left: 8px;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .footer-bottom p {
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    /* WhatsApp Widget */
+    .whatsapp-widget {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      z-index: 10000;
+    }
+
+    .whatsapp-float {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      border-radius: 50%;
+      box-shadow: var(--shadow-xl);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      text-decoration: none;
+      animation: whatsappPulse 3s infinite;
+    }
+
+    @keyframes whatsappPulse {
+      0%, 100% {
+        box-shadow: var(--shadow-xl), 0 0 0 0 rgba(37, 211, 102, 0.7);
+      }
+      50% {
+        box-shadow: var(--shadow-xl), 0 0 0 15px rgba(37, 211, 102, 0);
+      }
+    }
+
+    .whatsapp-float:hover {
+      transform: translateY(-4px) scale(1.1);
+    }
+
+    .whatsapp-icon {
+      width: 32px;
+      height: 32px;
+      color: white;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+      .cards-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 24px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .main-nav {
+        display: none;
+      }
+
+      .main-nav.active {
+        display: flex;
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        width: 100%;
+        height: calc(100vh - var(--header-height));
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: var(--space-3xl);
+        gap: 20px;
+        z-index: 999;
+      }
+
+      .mobile-menu-toggle {
+        display: block;
+      }
+
+      .trust-indicators {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 24px;
+      }
+
+      .hero-cta {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .contact-info {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .whatsapp-widget {
+        right: 16px;
+        bottom: 16px;
+      }
+
+      .whatsapp-float {
+        width: 56px;
+        height: 56px;
+      }
+
+      .whatsapp-icon {
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero {
+        padding: calc(var(--header-height) + 20px) 16px 20px;
+      }
+
+      section {
+        padding: 48px 16px;
+      }
+
+      .header-content {
+        padding: 0 16px;
+      }
+
+      .trust-indicators {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 20px;
+      }
+
+      .brand-text h2 {
+        font-size: 16px;
+      }
+
+      .brand-tagline {
+        font-size: 11px;
+      }
+    }
+
+    /* Accessibility */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
 </head>
 
-<body>
-<!-- HEADER -->
-<header class="site-header">
-  <div class="container">
+<body itemscope itemtype="https://schema.org/WebPage">
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.truecarehandf.in/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Hotels",
+        "item": "https://www.truecarehandf.in/#hotels"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Events",
+        "item": "https://www.truecarehandf.in/#events"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Management",
+        "item": "https://www.truecarehandf.in/#management"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Greentech",
+        "item": "https://www.truecarehandf.in/#greentech"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Header -->
+  <header class="site-header" role="banner" id="header">
     <div class="header-content">
-      <!-- LOGO & BRAND -->
-      <div class="logo-section">
-        <img src="assets/images/Truecare-logo.jpg" alt="TrueCare Hospitality and Facilities Pvt Ltd logo" width="70" height="70">
+      <div class="logo-section" itemscope itemtype="https://schema.org/Organization">
+        <img src="Truecare-logo-2.jpg" 
+             alt="TrueCare Hotels, Hospitality, Facilities & Services - India's Most Trusted Brand Logo" 
+             class="logo-img" 
+             width="65" 
+             height="65" 
+             itemprop="logo"
+             onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/><text x=%2250%25%22 y=%2255%25%22 text-anchor=%22middle%22 font-size=%2210%22 fill=%22%231e4a72%22 font-family=Arial>TrueCare</text></svg>';">
         <div class="brand-text">
-          <h1>TrueCare Hospitality & Facilities</h1>
-          <p>Service with Relentless Integrity</p>
+          <h2 itemprop="name">TrueCare Hotels, Hospitality, Facilities & Services</h2>
+          <p class="brand-tagline" itemprop="slogan">Service with Relentless Integrity</p>
         </div>
       </div>
 
-      <!-- NAVIGATION -->
-      <nav class="main-nav">
-        <a href="#hotels" class="nav-link">Hotels (B2C)</a>
-        <a href="#hospitality" class="nav-link">B2B Services</a>
-        <a href="#greentech" class="nav-link">Greentech</a>
-        <button class="theme-toggle" onclick="toggleTheme()">🌓 Theme</button>
-        <a href="mailto:wetruecare@gmail.com?subject=Hotel Booking Request&body=Dear TrueCare Team,%0D%0A%0D%0AI would like to book a room. Please provide details about:%0D%0A%0D%0AHotel: %0D%0ACheck-in Date: %0D%0ACheck-out Date: %0D%0ANumber of Guests: %0D%0ARoom Type: %0D%0ASpecial Requirements: %0D%0A%0D%0AThank you!" class="btn btn-primary">Book Now</a>
-        <a href="tel:+918700401489" class="btn btn-secondary">Call Now</a>
+      <button id="mobileMenuBtn" 
+              class="mobile-menu-toggle" 
+              onclick="toggleMobileMenu()" 
+              aria-label="Toggle Navigation Menu" 
+              aria-expanded="false"
+              aria-controls="mainNav">
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="mainNav" class="main-nav" role="navigation" aria-label="Main Navigation">
+        <a href="#hotels" class="nav-link" title="25+ Hotels across India">Hotels</a>
+        <a href="#events" class="nav-link" title="Events & Wedding Services">Events</a>
+        <a href="#management" class="nav-link" title="Hotel Management Services">Management</a>
+        <a href="#greentech" class="nav-link" title="Greentech Solutions">Greentech</a>
+        <a href="mailto:wetruecare@gmail.com?subject=Exclusive%20Quote%20Request%20-%20TrueCare%20Hotels%2C%20Hospitality%2C%20Facilities%20%26%20Services&body=Hello%20TrueCare%20Team%2C%0A%0AI%20am%20interested%20in%20your%20premium%20services.%20Please%20provide%20me%20with%20an%20exclusive%20quote.%0A%0AService%20Needed%3A%20%0ALocation%3A%20%0ADate%2FDuration%3A%20%0ABudget%20Range%3A%20%0A%0AContact%20Details%3A%0AName%3A%20%0APhone%3A%20%0AEmail%3A%20%0A%0AThank%20you!" class="btn btn-primary" title="Get Exclusive Quote">Get Quote</a>
       </nav>
     </div>
-  </div>
-</header>
+  </header>
 
-<!-- HERO SECTION -->
-<section class="hero">
-  <div class="container">
-    <h1>Delhi NCR's Leading Hospitality & Facilities Company</h1>
-    
-    <!-- VALUE PROPOSITION GRID -->
-    <div class="hero-grid">
-      <div class="hero-card">
-        <h3>🏨 TrueCare Hotels</h3>
-        <p style="font-size:1.1rem; opacity:0.9;">25+ Hotels across Delhi NCR<br>Direct Bookings for Guests</p>
-        <a href="#hotels" class="btn btn-primary" style="margin-top:16px;">Book Hotels</a>
-      </div>
-      
-      <div class="hero-card">
-        <h3>🤝 TrueCare Hospitality</h3>
-        <p style="font-size:1.1rem; opacity:0.9;">B2B Hotel Management<br>Consulting & Operations</p>
-        <a href="#hospitality" class="btn btn-primary" style="margin-top:16px;">Partner With Us</a>
-      </div>
-      
-      <div class="hero-card">
-        <h3>🌱 TrueCare Greentech</h3>
-        <p style="font-size:1.1rem; opacity:0.9;">STP/ETP O&M Services<br>Commercial Facilities</p>
-        <a href="#greentech" class="btn btn-primary" style="margin-top:16px;">Get Solutions</a>
-      </div>
-    </div>
-    
-    <p style="font-size:1.3rem; opacity:0.8; margin-bottom:32px;">Trusted by 500+ Projects | 100+ Clients | Delhi NCR & Pan India</p>
-    
-    <!-- PRIMARY CTA -->
-    <div class="cta-buttons">
-      <a href="#quote" class="btn btn-primary" style="font-size:1.2rem; padding:20px 40px;">Get Free Consultation</a>
-      <a href="tel:+918700401489" class="btn" style="border:2px solid #fff; color:#fff; font-size:1.2rem; padding:18px 40px;">📞 Call +91-8700401489</a>
-    </div>
-  </div>
-</section>
+  <main role="main">
+    <!-- Hero Section -->
+    <section class="hero" itemscope itemtype="https://schema.org/TouristAttraction">
+      <div class="hero-content">
+        <h1 class="hero-headline" itemprop="name">India's Most Trusted Hospitality Partner</h1>
+        <p class="hero-subheadline" itemprop="description">25+ luxury and business hotels in Delhi NCR and destination cities, premium events, performance-focused hotel management, and STP/ETP/WTP/RO greentech solutions with fast support and direct booking benefits.</p>
 
-<!-- TRUECARE HOTELS SECTION -->
-<section id="hotels" class="section-alt">
-  <div class="container">
-    <div class="section-header">
-      <h2>🏨 TrueCare Hotels - Complete Portfolio</h2>
-      <p>25+ Premium hotels across Delhi NCR, Noida, Gurgaon & destination resorts</p>
-    </div>
-    
-    <!-- NOIDA HOTELS -->
-    <div style="margin-bottom: 60px;">
-      <h3 style="color: var(--accent-color); font-size: 2rem; margin-bottom: 30px; text-align: center;">🏙️ NOIDA</h3>
-      <div class="hotel-grid">
-        <div class="hotel-card">
-          <h3>The Anvi Residency</h3>
-          <span class="location-tag">📍 Sector 122, Noida</span>
-          <p>Modern luxury residency with spacious rooms, premium amenities, and personalized service. Perfect for business travelers and extended stays.</p>
-          <a href="mailto:wetruecare@gmail.com?subject=Booking Request - The Anvi Residency&body=Dear TrueCare Team,%0D%0A%0D%0AI would like to book at The Anvi Residency, Sector 122 Noida.%0D%0A%0D%0ACheck-in: %0D%0ACheck-out: %0D%0AGuests: %0D%0ARoom Type: %0D%0A%0D%0AThank you!" class="btn btn-primary">Book Now</a>
-        </div>
-        
-        <div class="hotel-card">
-          <h3>Hotel Vivaan</h3>
-          <span class="location-tag">📍 Sector 122, Noida</span>
-          <p>Contemporary hospitality with warm service and modern facilities. Ideal for corporate guests and family stays.</p>
-          <a href="mailto:wetruecare@gmail.com?subject=Booking Request - Hotel Vivaan&body=Dear TrueCare Team,%0D%0A%0D%0AI would like to book at Hotel Vivaan, Sector 122 Noida.%0D%0A%0D%0ACheck-in: %0D%0ACheck-out: %0D%0AGuests: %0D%0ARoom Type: %0D%0A%0D%0AThank you!" class="btn btn-primary">Book Now</a>
-        </div>
-        
-        <div class="hotel-card">
-          <h3>Hotel Elite Grand</h3>
-          <span class="location-tag">📍 Sector 51, 61, 71, Noida</span>
-          <p>Premium luxury hotel chain across multiple Noida sectors. Conference halls, spa, fine dining, and wedding venues.</p>
-          <div style="display: flex; gap: 12px; margin-top: 16px;">
-            <a href="mailto:wetruecare@gmail.com?subject=Room Booking - Elite Grand Hotels&body=Dear TrueCare Team,%0D%0A%0D%0AI would like to book rooms at Elite Grand Hotels.%0D%0A%0D%0APreferred Sector: %0D%0ACheck-in: %0D%0ACheck-out: %0D%0AGuests: %0D%0A%0D%0AThank you!" class="btn btn-primary">Book Rooms</a>
-            <a href="mailto:wetruecare@gmail.com?subject=Wedding Venue Inquiry - Elite Grand&body=Dear TrueCare Team,%0D%0A%0D%0AI would like to inquire about wedding venues at Elite Grand Hotels.%0D%0A%0D%0AEvent Date: %0D%0AGuests Expected: %0D%0APreferred Location: %0D%0ABudget Range: %0D%0A%0D%0AThank you!" class="btn" style="border:2px solid var(--accent-color); color:var(--accent-color); padding: 8px 16px;">Wedding Venue</a>
+        <div class="trust-indicators">
+          <div class="trust-indicator">
+            <span class="trust-number">25+</span>
+            <span class="trust-label">Hotels</span>
+          </div>
+          <div class="trust-indicator">
+            <span class="trust-number">500+</span>
+            <span class="trust-label">Projects</span>
+          </div>
+          <div class="trust-indicator">
+            <span class="trust-number">1500+</span>
+            <span class="trust-label">Reviews</span>
+          </div>
+          <div class="trust-indicator">
+            <span class="trust-number">10+</span>
+            <span class="trust-label">Years Experience</span>
           </div>
         </div>
-        
-        <div class="hotel-card">
-          <h3>Hotel Blue Shine</h3>
-          <span class="location-tag">📍 Sector 71, Noida</span>
-          <p>Modern comfort with excellent connectivity. Business center and leisure facilities for corporate travelers.</p>
-          <a href="mailto:wetruecare@gmail.com?subject=Booking Request - Hotel Blue Shine&body=Dear TrueCare Team,%0D%0A%0D%0AI would like to book at Hotel Blue Shine, Sector 71 Noida.%0D%0A%0D%0ACheck-in: %0D%0ACheck-out: %0D%0AGuests: %0D%0A%0D%0AThank you!" class="btn btn-primary">Book Now</a>
-        </div>
-        
-        <div class="hotel-card">
-          <h3>Hotel The Royal</h3>
-          <span class="location-tag">📍 Salarpur, Sector 102, Noida</span>
-          <p>Royal hospitality experience with comprehensive amenities and spacious event spaces.</p>
-          <a href="mailto:wetruecare@gmail.com?subject=Booking Request - Hotel The Royal&body=Dear TrueCare Team,%0D%0A%0D%0AI would like to book at Hotel The Royal, Sector 102 Noida.%0D%0A%0D%0ACheck-in: %0D%0ACheck-out: %0D%0AGuests: %0D%0A%0D%0AThank you!" class="btn btn-primary">Book Now</a>
-        </div>
-      </div>
-    </div>
 
-    <!-- DELHI HOTELS -->
-    <div style="margin-bottom: 60px;">
-      <h3 style="color: var(--accent-color); font-size: 2rem; margin-bottom: 30px; text-align: center;">🏛️ DELHI</h3>
-      <div class="hotel-grid">
-        <div class="hotel-card">
-          <h3>The Pamposh</h3>
-          <span class="location-tag">📍 Greater Kailash-1, Delhi</span>
-          <p>Boutique luxury hotel in South Delhi's premium location. Fine dining and elegant event spaces.</p>
-          <a href="mailto:wetruecare@gmail.com?subject=Booking Request - The Pamposh&body=Dear TrueCare Team,%0D%0A%0D%0AI would like to book at The Pamposh, GK-1 Delhi.%0D%0A%0D%0ACheck-in: %0D%0ACheck-out: %0D%0AGuests: %0D%0A%0D%0AThank you!" class="btn btn-primary">Book Now</a>
-        </div>
-        
-        <div class="hotel-card">
-          <h3>Hotel Grand</h3>
-          <span class="location-tag">📍 Kailash Colony, Delhi</span>
-          <p>Grand hospitality with traditional warmth. Perfect for weddings and corporate events.</p>
-          <a href="mailto:wetruecare@gmail.com?subject=Booking Request - Hotel Grand&body=Dear TrueCare Team,%0D%0A%0D%0AI would like to book at Hotel Grand, Kailash Colony Delhi.%0D%0A%0D%0ACheck-in: %0D%0ACheck-out: %0D%0AGuests: %0D%0A%0D%0AThank you!" class="btn btn-primary">Book Now</a>
-        </div>
-        
-        <div class="hotel-card">
-          <h3>Harish Court</h3>
-          <span class="location-tag">📍 Lajpat Nagar, Delhi</span>
-          <p>Central location with excellent connectivity. Business and leisure facilities.</p>
-          <a href="mailto:wetruecare@gmail.com?subject=Booking Request - Harish Court Delhi&body=Dear TrueCare Team,%0D%0A%0D%0AI would like to book at Harish Court, Lajpat Nagar Delhi.%0D%0A%0D%0ACheck-in: %0D%0ACheck-out: %0D%0AGuests: %0D%0A%0D%0AThank you!" class="btn btn-primary">Book Now</a>
-        </div>
-        
-        <div class="hotel-card">
-          <h3>Nirvana Suites</h3>
-          <span class="location-tag">📍 Jasola Vihar, Delhi</span>
-          <p>Premium suites with modern amenities. Corporate hospitality and event management.</p>
-          <a href="mailto:wetruecare@gmail.com?subject=Booking Request - Nirvana Suites&body=Dear TrueCare Team,%0D%0A%0D%0AI would like to book at Nirvana Suites, Jasola Vihar Delhi.%0D%0A%0D%0ACheck-in: %0D%0ACheck-out: %0D%0AGuests: %0D%0A%0D%0AThank you!" class="btn btn-primary">Book Now</a>
-        </div>
-        
-        <div class="hotel-card">
-          <h3>The Palace & Resort</h3>
-          <span class="location-tag">📍 Chhatarpur, Delhi</span>
-          <p>Resort experience within Delhi. Weddings, events, spa, and recreational facilities.</p>
-          <a href="mailto:wetruecare@gmail.com?subject=Booking Request - The Palace Resort&body=Dear TrueCare Team,%0D%0A%0D%0AI would like to book at The Palace & Resort, Chhatarpur Delhi.%0D%0A%0D%0ACheck-in: %0D%0ACheck-out: %0D%0AGuests: %0D%0A%0D%0AThank you!" class="btn btn-primary">Book Now</a>
+        <div class="hero-cta">
+          <a href="#hotels" class="btn btn-primary btn-lg" title="Book Best Hotels India"><span>Explore Hotels</span> <span>→</span></a>
+          <a href="#events" class="btn btn-secondary btn-lg" title="Plan Your Event"><span>Plan Events</span> <span>→</span></a>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- GURUGRAM HOTELS -->
-    <div style="margin-bottom: 60px;">
-      <h3 style="color: var(--accent-color); font-size: 2rem; margin-bottom: 30px; text-align: center;">🏢 GURUGRAM</h3>
-      <div class="hotel-grid">
-        <div class="hotel-card">
-          <h3>Harish Court</h3>
-          <span class="location-tag">📍 MG Road, DLF Phase 3, Gurgaon</span>
-          <p>Prime business location with luxury amenities. Corporate conferences and premium dining.</p>
-          <a href="mailto:wetruecare@gmail.com?subject=Booking Request - Harish Court Gurgaon&body=Dear TrueCare Team,%0D%0A%0D%0AI would like to book at Harish Court, MG Road Gurgaon.%0D%0A%0D%0ACheck-in: %0D%0ACheck-out: %0D%0AGuests: %0D%0A%0D%0AThank you!" class="btn btn-primary">Book Now</a>
+    <!-- Four Pillars Section -->
+    <section class="pillars-section" id="pillars">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Four Service Pillars</h2>
+          <p class="section-subtitle">Comprehensive hospitality and facilities solutions across India</p>
         </div>
-        
-        <div class="hotel-card">
-          <h3>Zen Suites</h3>
-          <span class="location-tag">📍 Sector 14, Gurgaon</span>
-          <p>Contemporary suites with zen-inspired design. Business center and wellness facilities.</p>
-          <a href="mailto:wetruecare@gmail.com?subject=Booking Request - Zen Suites&body=Dear TrueCare Team,%0D%0A%0D%0AI would like to book at Zen Suites, Sector 14 Gurgaon.%0D%0A%0D%0ACheck-in: %0D%0ACheck-out: %0D%0AGuests: %0D%0A%0D%0AThank you!" class="btn btn-primary">Book Now</a>
-        </div>
-        
-        <div class="hotel-card">
-          <h3>Zen Studio</h3>
-          <span class="location-tag">📍 Cyber City, Gurgaon</span>
-          <p>Modern studio accommodations in IT hub. Perfect for business travelers and corporate events.</p>
-          <a href="mailto:wetruecare@gmail.com?subject=Booking Request - Zen Studio&body=Dear TrueCare Team,%0D%0A%0D%0AI would like to book at Zen Studio, Cyber City Gurgaon.%0D%0A%0D%0ACheck-in: %0D%0ACheck-out: %0D%0AGuests: %0D%0A%0D%0AThank you!" class="btn btn-primary">Book Now</a>
-        </div>
-      </div>
-    </div>
 
-    <!-- RESORT DESTINATIONS -->
-    <div style="margin-bottom: 40px;">
-      <h3 style="color: var(--accent-color); font-size: 2rem; margin-bottom: 30px; text-align: center;">🏔️ RESORT & DESTINATION PROPERTIES</h3>
-      <div class="hotel-grid">
-        <div class="hotel-card">
-          <h3>Winsom Resorts & Spa</h3>
-          <span class="location-tag">📍 Jim Corbett</span>
-          <p>Luxury wildlife resort with spa, adventure activities, and nature experiences in Corbett National Park.</p>
-          <a href="mailto:wetruecare@gmail.com?subject=Resort Booking - Winsom Resorts&body=Dear TrueCare Team,%0D%0A%0D%0AI would like to book at Winsom Resorts & Spa, Jim Corbett.%0D%0A%0D%0ACheck-in: %0D%0ACheck-out: %0D%0AGuests: %0D%0APackage: %0D%0A%0D%0AThank you!" class="btn btn-primary">Book Resort</a>
-        </div>
-        
-        <div class="hotel-card">
-          <h3>Hotel Sitata International</h3>
-          <span class="location-tag">📍 Manali</span>
-          <p>International standard hospitality in the heart of Himachal. Adventure packages and mountain experiences.</p>
-          <a href="mailto:wetruecare@gmail.com?subject=Booking Request - Hotel Sitata&body=Dear TrueCare Team,%0D%0A%0D%0AI would like to book at Hotel Sitata International, Manali.%0D%0A%0D%0ACheck-in: %0D%0ACheck-out: %0D%0AGuests: %0D%0A%0D%0AThank you!" class="btn btn-primary">Book Now</a>
-        </div>
-        
-        <div class="hotel-card">
-          <h3>Seven Hills</h3>
-          <span class="location-tag">📍 Shimla, Srinagar, Manali</span>
-          <p>Premium hill station accommodations with breathtaking views and local cultural experiences.</p>
-          <a href="mailto:wetruecare@gmail.com?subject=Booking Request - Seven Hills&body=Dear TrueCare Team,%0D%0A%0D%0AI would like to book at Seven Hills.%0D%0A%0D%0APreferred Location: %0D%0ACheck-in: %0D%0ACheck-out: %0D%0AGuests: %0D%0A%0D%0AThank you!" class="btn btn-primary">Book Now</a>
-        </div>
-        
-        <div class="hotel-card">
-          <h3>Hotel Star of Kashmir</h3>
-          <span class="location-tag">📍 Srinagar</span>
-          <p>Authentic Kashmiri hospitality with houseboat experiences and Dal Lake cultural tours.</p>
-          <a href="mailto:wetruecare@gmail.com?subject=Booking Request - Hotel Star of Kashmir&body=Dear TrueCare Team,%0D%0A%0D%0AI would like to book at Hotel Star of Kashmir, Srinagar.%0D%0A%0D%0ACheck-in: %0D%0ACheck-out: %0D%0AGuests: %0D%0AExperience: %0D%0A%0D%0AThank you!" class="btn btn-primary">Book Now</a>
-        </div>
-        
-        <div class="hotel-card">
-          <h3>Vivana - The Business Hotel</h3>
-          <span class="location-tag">📍 Dhanbad</span>
-          <p>Business-focused hospitality with modern amenities and conference facilities for corporate travelers.</p>
-          <a href="mailto:wetruecare@gmail.com?subject=Booking Request - Vivana Business Hotel&body=Dear TrueCare Team,%0D%0A%0D%0AI would like to book at Vivana Business Hotel, Dhanbad.%0D%0A%0D%0ACheck-in: %0D%0ACheck-out: %0D%0AGuests: %0D%0A%0D%0AThank you!" class="btn btn-primary">Book Now</a>
-        </div>
-        
-        <div class="hotel-card">
-          <h3>Square Inn</h3>
-          <span class="location-tag">📍 Varanasi</span>
-          <p>Spiritual city hospitality with traditional charm and modern comforts near Ganga Ghats.</p>
-          <a href="mailto:wetruecare@gmail.com?subject=Booking Request - Square Inn&body=Dear TrueCare Team,%0D%0A%0D%0AI would like to book at Square Inn, Varanasi.%0D%0A%0D%0ACheck-in: %0D%0ACheck-out: %0D%0AGuests: %0D%0A%0D%0AThank you!" class="btn btn-primary">Book Now</a>
-        </div>
-        
-        <div class="hotel-card">
-          <h3>Rama Continental & Advantage Inn</h3>
-          <span class="location-tag">📍 Prayagraj</span>
-          <p>Premium accommodations in the holy city with pilgrimage packages and cultural experiences.</p>
-          <a href="mailto:wetruecare@gmail.com?subject=Booking Request - Rama Continental&body=Dear TrueCare Team,%0D%0A%0D%0AI would like to book at Rama Continental & Advantage Inn, Prayagraj.%0D%0A%0D%0ACheck-in: %0D%0ACheck-out: %0D%0AGuests: %0D%0A%0D%0AThank you!" class="btn btn-primary">Book Now</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <span class="pillar-icon">🏨</span>
+            <h3 class="pillar-title">Hotels</h3>
+            <ul class="pillar-features">
+              <li>Luxury and business stays</li>
+              <li>Event venues and corporate hospitality</li>
+              <li>Dining and leisure experiences</li>
+              <li>Direct booking benefits</li>
+            </ul>
+            <a href="#hotels" class="btn btn-primary">Explore Hotels</a>
+          </div>
 
-<!-- TRUECARE HOSPITALITY SECTION -->
-<section id="hospitality" class="section-bg">
-  <div class="container">
-    <div class="section-header">
-      <h2>🤝 TrueCare Hospitality - B2B Services</h2>
-      <p>Hotel management, consulting & partnerships for hotel owners, investors & corporates</p>
-    </div>
-    
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:start;">
-      <!-- B2B SERVICES -->
-      <div>
-        <h3 style="color:var(--accent-color); font-size:2rem; margin-bottom:32px;">Our B2B Solutions</h3>
-        
-        <div style="margin-bottom:32px;">
-          <h4 style="color:var(--primary-color); margin-bottom:12px;">🏨 Hotel Operations Management</h4>
-          <p style="color:var(--text-light); line-height:1.6;">Complete operational oversight, revenue optimization, staff management, and quality assurance for hotel properties.</p>
+          <div class="pillar-card">
+            <span class="pillar-icon">🎉</span>
+            <h3 class="pillar-title">Events</h3>
+            <ul class="pillar-features">
+              <li>Weddings and social celebrations</li>
+              <li>Corporate events and MICE</li>
+              <li>Group travel (GITs/FITs)</li>
+              <li>Destination events</li>
+            </ul>
+            <a href="#events" class="btn btn-primary">Plan Events</a>
+          </div>
+
+          <div class="pillar-card">
+            <span class="pillar-icon">📈</span>
+            <h3 class="pillar-title">Hotel Management</h3>
+            <ul class="pillar-features">
+              <li>Revenue and distribution optimization</li>
+              <li>Digital marketing and SEO</li>
+              <li>Operations excellence</li>
+              <li>PMS and technology solutions</li>
+            </ul>
+            <a href="#management" class="btn btn-primary">Get Management Proposal</a>
+          </div>
+
+          <div class="pillar-card">
+            <span class="pillar-icon">🌱</span>
+            <h3 class="pillar-title">Greentech</h3>
+            <ul class="pillar-features">
+              <li>STP/ETP/WTP and RO systems</li>
+              <li>Ozonation and water treatment</li>
+              <li>AMCs with SLAs</li>
+              <li>Compliance documentation</li>
+            </ul>
+            <a href="#greentech" class="btn btn-primary">Get Technical Quote</a>
+          </div>
         </div>
-        
-        <div style="margin-bottom:32px;">
-          <h4 style="color:var(--primary-color); margin-bottom:12px;">📈 Hospitality Consulting</h4>
-          <p style="color:var(--text-light); line-height:1.6;">Strategic consulting for hotel owners, feasibility studies, market analysis, and business planning for hospitality ventures.</p>
-        </div>
-        
-        <div style="margin-bottom:32px;">
-          <h4 style="color:var(--primary-color); margin-bottom:12px;">🎯 Corporate Partnerships</h4>
-          <p style="color:var(--text-light); line-height:1.6;">Corporate accommodation programs, MICE services, and bulk booking partnerships for businesses and travel agencies.</p>
-        </div>
-        
-        <div style="margin-bottom:32px;">
-          <h4 style="color:var(--primary-color); margin-bottom:12px;">⚡ Hotel Acquisition & Management</h4>
-          <p style="color:var(--text-light); line-height:1.6;">Partial acquisition, turnaround management, and complete operational takeover for underperforming properties.</p>
-        </div>
-        
-        <a href="mailto:wetruecare@gmail.com?subject=B2B Partnership Inquiry - TrueCare Hospitality&body=Dear TrueCare Team,%0D%0A%0D%0AI would like to explore B2B partnership opportunities.%0D%0A%0D%0ACompany: %0D%0AService Required: %0D%0ALocation: %0D%0AContact Person: %0D%0APhone: %0D%0A%0D%0AThank you!" class="btn btn-secondary">Partner With Us</a>
       </div>
-      
-      <!-- TARGET PARTNERS -->
-      <div style="background:var(--card-bg); padding:40px; border-radius:16px; box-shadow:0 8px 30px var(--shadow-color);">
-        <h3 style="color:var(--accent-color); font-size:2rem; margin-bottom:32px;">Who We Work With</h3>
-        
-        <div style="display:grid; gap:24px;">
-          <div style="display:flex; align-items:center; gap:16px;">
-            <div style="background:var(--accent-color); color:#fff; width:50px; height:50px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold;">🏢</div>
-            <div>
-              <h5 style="margin:0; color:var(--primary-color);">Hotel Owners & Investors</h5>
-              <p style="margin:0; color:var(--text-light); font-size:0.9rem;">Property management and revenue optimization</p>
+    </section>
+
+    <!-- Complete Hotels Directory with Researched Features -->
+    <section id="hotels" class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">All 25+ Hotels Across India | Direct Booking Benefits</h2>
+        <p class="section-subtitle">Luxury hotels, destination resorts & business accommodations across Delhi NCR and destination cities. Book directly for guaranteed lowest rates & exclusive perks!</p>
+      </div>
+
+      <div class="cards-grid">
+        <!-- NOIDA HOTELS -->
+        <!-- The Anvi Residency - Sector 122 -->
+        <article class="card" itemscope itemtype="https://schema.org/Hotel">
+          <div class="card-image">
+            <div class="hotel-placeholder hotel-premium">
+              <div class="placeholder-content">
+                <span class="hotel-icon">🏨</span>
+                <h3 class="placeholder-title">The Anvi Residency</h3>
+                <div class="placeholder-location">Noida • Premium</div>
+              </div>
             </div>
           </div>
-          
-          <div style="display:flex; align-items:center; gap:16px;">
-            <div style="background:var(--accent-color); color:#fff; width:50px; height:50px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold;">✈️</div>
-            <div>
-              <h5 style="margin:0; color:var(--primary-color);">Travel Agencies & OTAs</h5>
-              <p style="margin:0; color:var(--text-light); font-size:0.9rem;">Inventory partnerships and commission programs</p>
+          <div class="card-content">
+            <div class="card-category" itemprop="address">Noida Premium</div>
+            <h3 class="card-title" itemprop="name">The Anvi Residency - Sector 122</h3>
+            <p class="card-description" itemprop="description">Luxury business hotel with premium amenities, conference facilities, and personalized service for extended stays and corporate travelers in Noida's prime location.</p>
+            <div class="card-features">
+              <span class="feature-tag">Conference Hall</span>
+              <span class="feature-tag">Wi-Fi</span>
+              <span class="feature-tag">Restaurant</span>
+              <span class="feature-tag">Room Service</span>
+              <span class="feature-tag">AC Rooms</span>
+              <span class="feature-tag">Corporate Rates</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Hotel%20Booking%20-%20Anvi%20Residency%20Noida&body=Hello%20TrueCare%20Team%2C%0A%0AI%20would%20like%20to%20book%20Anvi%20Residency%20Noida.%0A%0ACheck-in%3A%20%0ACheck-out%3A%20%0AGuests%3A%20%0A%0AContact%3A%20" class="btn-book">Book Now</a>
+              <a href="tel:+918700401489" class="btn btn-outline">Call Now</a>
             </div>
           </div>
-          
-          <div style="display:flex; align-items:center; gap:16px;">
-            <div style="background:var(--accent-color); color:#fff; width:50px; height:50px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold;">🏛️</div>
-            <div>
-              <h5 style="margin:0; color:var(--primary-color);">Corporate Companies & MNCs</h5>
-              <p style="margin:0; color:var(--text-light); font-size:0.9rem;">Bulk accommodation and event management</p>
+        </article>
+
+        <!-- Hotel Vivaan - Sector 122 -->
+        <article class="card" itemscope itemtype="https://schema.org/Hotel">
+          <div class="card-image">
+            <div class="hotel-placeholder hotel-business">
+              <div class="placeholder-content">
+                <span class="hotel-icon">💼</span>
+                <h3 class="placeholder-title">Hotel Vivaan</h3>
+                <div class="placeholder-location">Noida • Business</div>
+              </div>
             </div>
           </div>
+          <div class="card-content">
+            <div class="card-category" itemprop="address">Noida Business</div>
+            <h3 class="card-title" itemprop="name">Hotel Vivaan - Sector 122</h3>
+            <p class="card-description" itemprop="description">Modern business hotel with contemporary amenities, excellent connectivity, and family-friendly facilities near DPS School in Sector 122.</p>
+            <div class="card-features">
+              <span class="feature-tag">Business Center</span>
+              <span class="feature-tag">Free Wi-Fi</span>
+              <span class="feature-tag">Multi-cuisine Restaurant</span>
+              <span class="feature-tag">Laundry Service</span>
+              <span class="feature-tag">Parking</span>
+              <span class="feature-tag">Family Rooms</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Hotel%20Booking%20-%20Hotel%20Vivaan%20Noida&body=Hello%20TrueCare%20Team%2C%0A%0AI%20would%20like%20to%20book%20Hotel%20Vivaan%20Noida.%0A%0ACheck-in%3A%20%0ACheck-out%3A%20%0AGuests%3A%20%0A%0AContact%3A%20" class="btn-book">Book Now</a>
+              <a href="tel:+918700401489" class="btn btn-outline">Call Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hotel Elite Grand - Multiple Sectors -->
+        <article class="card" itemscope itemtype="https://schema.org/Hotel">
+          <div class="card-image">
+            <div class="hotel-placeholder hotel-multi">
+              <div class="placeholder-content">
+                <span class="hotel-icon">👑</span>
+                <h3 class="placeholder-title">Hotel Elite Grand</h3>
+                <div class="placeholder-location">Noida • Multi-Location</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-category" itemprop="address">Noida Multi-Location</div>
+            <h3 class="card-title" itemprop="name">Hotel Elite Grand - Sectors 51, 61, 71</h3>
+            <p class="card-description" itemprop="description">Premium hotel chain across multiple Noida sectors with comprehensive facilities, banquet halls, and wedding venues near Kailash Hospital and metro stations.</p>
+            <div class="card-features">
+              <span class="feature-tag">Banquet Halls</span>
+              <span class="feature-tag">Wedding Venues</span>
+              <span class="feature-tag">Restaurant</span>
+              <span class="feature-tag">Conference Rooms</span>
+              <span class="feature-tag">Valet Parking</span>
+              <span class="feature-tag">Metro Connectivity</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Hotel%20Booking%20-%20Elite%20Grand%20Hotels%20Noida&body=Hello%20TrueCare%20Team%2C%0A%0AI%20would%20like%20to%20book%20Elite%20Grand%20Hotels%20in%20Noida.%0A%0APreferred%20Sector%3A%20%0ACheck-in%3A%20%0ACheck-out%3A%20%0AGuests%3A%20%0A%0AContact%3A%20" class="btn-book">Book Now</a>
+              <a href="tel:+918700401489" class="btn btn-outline">Call Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hotel Blue Shine - Sector 71 -->
+        <article class="card" itemscope itemtype="https://schema.org/Hotel">
+          <div class="card-image">
+            <div class="hotel-placeholder hotel-business">
+              <div class="placeholder-content">
+                <span class="hotel-icon">💎</span>
+                <h3 class="placeholder-title">Hotel Blue Shine</h3>
+                <div class="placeholder-location">Noida • Corporate</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-category" itemprop="address">Noida Corporate</div>
+            <h3 class="card-title" itemprop="name">Hotel Blue Shine - Sector 71</h3>
+            <p class="card-description" itemprop="description">Modern business hotel with excellent amenities and strategic location, offering comfortable stays with professional service and corporate facilities.</p>
+            <div class="card-features">
+              <span class="feature-tag">Business Services</span>
+              <span class="feature-tag">Wi-Fi Access</span>
+              <span class="feature-tag">Room Service</span>
+              <span class="feature-tag">Laundry</span>
+              <span class="feature-tag">Travel Desk</span>
+              <span class="feature-tag">AC Rooms</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Hotel%20Booking%20-%20Hotel%20Blue%20Shine%20Noida&body=Hello%20TrueCare%20Team%2C%0A%0AI%20would%20like%20to%20book%20Hotel%20Blue%20Shine%20Noida.%0A%0ACheck-in%3A%20%0ACheck-out%3A%20%0AGuests%3A%20%0A%0AContact%3A%20" class="btn-book">Book Now</a>
+              <a href="tel:+918700401489" class="btn btn-outline">Call Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hotel The Royal - Salarpur, Sector 102 -->
+        <article class="card" itemscope itemtype="https://schema.org/Hotel">
+          <div class="card-image">
+            <div class="hotel-placeholder hotel-royal">
+              <div class="placeholder-content">
+                <span class="hotel-icon">👑</span>
+                <h3 class="placeholder-title">Hotel The Royal</h3>
+                <div class="placeholder-location">Noida • Royal</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-category" itemprop="address">Noida Royal</div>
+            <h3 class="card-title" itemprop="name">Hotel The Royal - Salarpur, Sector 102</h3>
+            <p class="card-description" itemprop="description">Royal hospitality experience with premium accommodations and comprehensive amenities in Salarpur area, offering luxury and comfort for discerning guests.</p>
+            <div class="card-features">
+              <span class="feature-tag">Premium Rooms</span>
+              <span class="feature-tag">Restaurant</span>
+              <span class="feature-tag">Event Spaces</span>
+              <span class="feature-tag">Room Service</span>
+              <span class="feature-tag">Parking</span>
+              <span class="feature-tag">Royal Hospitality</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Hotel%20Booking%20-%20Hotel%20The%20Royal%20Noida&body=Hello%20TrueCare%20Team%2C%0A%0AI%20would%20like%20to%20experience%20royal%20hospitality%20at%20Hotel%20The%20Royal%20Noida.%0A%0ACheck-in%3A%20%0ACheck-out%3A%20%0AGuests%3A%20%0A%0AContact%3A%20" class="btn-book">Book Now</a>
+              <a href="tel:+918700401489" class="btn btn-outline">Call Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- DELHI HOTELS -->
+        <!-- The Pamposh - GK-1 -->
+        <article class="card" itemscope itemtype="https://schema.org/Hotel">
+          <div class="card-image">
+            <div class="hotel-placeholder hotel-delhi">
+              <div class="placeholder-content">
+                <span class="hotel-icon">🏛️</span>
+                <h3 class="placeholder-title">The Pamposh</h3>
+                <div class="placeholder-location">Delhi • Premium</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-category" itemprop="address">Delhi Premium</div>
+            <h3 class="card-title" itemprop="name">The Pamposh - Greater Kailash-1</h3>
+            <p class="card-description" itemprop="description">Boutique luxury hotel in South Delhi's prestigious Greater Kailash area with elegant accommodations, fine dining, and personalized hospitality services.</p>
+            <div class="card-features">
+              <span class="feature-tag">Boutique Luxury</span>
+              <span class="feature-tag">Fine Dining</span>
+              <span class="feature-tag">Premium Location</span>
+              <span class="feature-tag">Business Services</span>
+              <span class="feature-tag">Elegant Rooms</span>
+              <span class="feature-tag">South Delhi Access</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Hotel%20Booking%20-%20The%20Pamposh%20Delhi&body=Hello%20TrueCare%20Team%2C%0A%0AI%20would%20like%20to%20book%20The%20Pamposh%20in%20GK-1%20Delhi.%0A%0ACheck-in%3A%20%0ACheck-out%3A%20%0AGuests%3A%20%0A%0AContact%3A%20" class="btn-book">Book Now</a>
+              <a href="tel:+918700401489" class="btn btn-outline">Call Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hotel Grand - Kailash Colony -->
+        <article class="card" itemscope itemtype="https://schema.org/Hotel">
+          <div class="card-image">
+            <div class="hotel-placeholder hotel-delhi">
+              <div class="placeholder-content">
+                <span class="hotel-icon">🏨</span>
+                <h3 class="placeholder-title">Hotel Grand</h3>
+                <div class="placeholder-location">Delhi • Central</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-category" itemprop="address">Delhi Central</div>
+            <h3 class="card-title" itemprop="name">Hotel Grand - Kailash Colony</h3>
+            <p class="card-description" itemprop="description">Grand hospitality with comprehensive wedding and corporate venue facilities in central Delhi location with excellent connectivity and professional services.</p>
+            <div class="card-features">
+              <span class="feature-tag">Wedding Venues</span>
+              <span class="feature-tag">Corporate Events</span>
+              <span class="feature-tag">Banquet Halls</span>
+              <span class="feature-tag">Restaurant</span>
+              <span class="feature-tag">Central Location</span>
+              <span class="feature-tag">Professional Service</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Hotel%20Booking%20-%20Hotel%20Grand%20Delhi&body=Hello%20TrueCare%20Team%2C%0A%0AI%20would%20like%20to%20book%20Hotel%20Grand%20in%20Kailash%20Colony%20Delhi.%0A%0ACheck-in%3A%20%0ACheck-out%3A%20%0AGuests%3A%20%0A%0AContact%3A%20" class="btn-book">Book Now</a>
+              <a href="tel:+918700401489" class="btn btn-outline">Call Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Harish Court - Lajpat Nagar -->
+        <article class="card" itemscope itemtype="https://schema.org/Hotel">
+          <div class="card-image">
+            <div class="hotel-placeholder hotel-delhi">
+              <div class="placeholder-content">
+                <span class="hotel-icon">🏢</span>
+                <h3 class="placeholder-title">Harish Court</h3>
+                <div class="placeholder-location">Delhi • Business</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-category" itemprop="address">Delhi Business</div>
+            <h3 class="card-title" itemprop="name">Harish Court - Lajpat Nagar</h3>
+            <p class="card-description" itemprop="description">Business-friendly hotel in Lajpat Nagar with excellent city connectivity, modern amenities, and professional service for corporate travelers.</p>
+            <div class="card-features">
+              <span class="feature-tag">Business Amenities</span>
+              <span class="feature-tag">City Connectivity</span>
+              <span class="feature-tag">Wi-Fi</span>
+              <span class="feature-tag">Restaurant</span>
+              <span class="feature-tag">Meeting Rooms</span>
+              <span class="feature-tag">Corporate Service</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Hotel%20Booking%20-%20Harish%20Court%20Delhi&body=Hello%20TrueCare%20Team%2C%0A%0AI%20would%20like%20to%20book%20Harish%20Court%20in%20Lajpat%20Nagar%20Delhi.%0A%0ACheck-in%3A%20%0ACheck-out%3A%20%0AGuests%3A%20%0A%0AContact%3A%20" class="btn-book">Book Now</a>
+              <a href="tel:+918700401489" class="btn btn-outline">Call Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Nirvana Suites - Jasola Vihar -->
+        <article class="card" itemscope itemtype="https://schema.org/Hotel">
+          <div class="card-image">
+            <div class="hotel-placeholder hotel-delhi">
+              <div class="placeholder-content">
+                <span class="hotel-icon">🏨</span>
+                <h3 class="placeholder-title">Nirvana Suites</h3>
+                <div class="placeholder-location">Delhi • Suites</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-category" itemprop="address">Delhi Suites</div>
+            <h3 class="card-title" itemprop="name">Nirvana Suites - Jasola Vihar</h3>
+            <p class="card-description" itemprop="description">Comfortable suite-style accommodations in Jasola Vihar with corporate proximity and extended-stay facilities for business travelers and families.</p>
+            <div class="card-features">
+              <span class="feature-tag">Suite Rooms</span>
+              <span class="feature-tag">Extended Stays</span>
+              <span class="feature-tag">Corporate Proximity</span>
+              <span class="feature-tag">Kitchen Facilities</span>
+              <span class="feature-tag">Business Services</span>
+              <span class="feature-tag">Family Friendly</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Hotel%20Booking%20-%20Nirvana%20Suites%20Delhi&body=Hello%20TrueCare%20Team%2C%0A%0AI%20would%20like%20to%20book%20Nirvana%20Suites%20in%20Jasola%20Vihar%20Delhi.%0A%0ACheck-in%3A%20%0ACheck-out%3A%20%0AGuests%3A%20%0A%0AContact%3A%20" class="btn-book">Book Now</a>
+              <a href="tel:+918700401489" class="btn btn-outline">Call Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- The Palace Resort - Chhatarpur -->
+        <article class="card" itemscope itemtype="https://schema.org/Hotel">
+          <div class="card-image">
+            <div class="hotel-placeholder hotel-delhi">
+              <div class="placeholder-content">
+                <span class="hotel-icon">🏰</span>
+                <h3 class="placeholder-title">Palace Resort</h3>
+                <div class="placeholder-location">Delhi • Resort</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-category" itemprop="address">Delhi Resort</div>
+            <h3 class="card-title" itemprop="name">The Palace Resort - M T Lane, Chhatarpur</h3>
+            <p class="card-description" itemprop="description">Resort-style accommodation in Chhatarpur perfect for ceremonies, social events, and leisure stays with spacious grounds and event facilities.</p>
+            <div class="card-features">
+              <span class="feature-tag">Resort Style</span>
+              <span class="feature-tag">Event Venues</span>
+              <span class="feature-tag">Ceremonies</span>
+              <span class="feature-tag">Spacious Grounds</span>
+              <span class="feature-tag">Social Events</span>
+              <span class="feature-tag">Banquet Facilities</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Hotel%20Booking%20-%20Palace%20Resort%20Delhi&body=Hello%20TrueCare%20Team%2C%0A%0AI%20would%20like%20to%20book%20The%20Palace%20Resort%20in%20Chhatarpur%20Delhi.%0A%0ACheck-in%3A%20%0ACheck-out%3A%20%0AGuests%3A%20%0A%0AContact%3A%20" class="btn-book">Book Now</a>
+              <a href="tel:+918700401489" class="btn btn-outline">Call Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- GURUGRAM HOTELS -->
+        <!-- Harish Court - MG Road -->
+        <article class="card" itemscope itemtype="https://schema.org/Hotel">
+          <div class="card-image">
+            <div class="hotel-placeholder hotel-corporate">
+              <div class="placeholder-content">
+                <span class="hotel-icon">🏢</span>
+                <h3 class="placeholder-title">Harish Court MG Road</h3>
+                <div class="placeholder-location">Gurugram • Corporate</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-category" itemprop="address">Gurugram Corporate</div>
+            <h3 class="card-title" itemprop="name">Harish Court - MG Road</h3>
+            <p class="card-description" itemprop="description">Strategic business hotel on MG Road with excellent corporate connectivity, modern facilities, and professional services for business travelers in Gurugram's commercial hub.</p>
+            <div class="card-features">
+              <span class="feature-tag">MG Road Location</span>
+              <span class="feature-tag">Corporate Hub</span>
+              <span class="feature-tag">Business Services</span>
+              <span class="feature-tag">Meeting Rooms</span>
+              <span class="feature-tag">Wi-Fi</span>
+              <span class="feature-tag">Professional Service</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Hotel%20Booking%20-%20Harish%20Court%20MG%20Road&body=Hello%20TrueCare%20Team%2C%0A%0AI%20would%20like%20to%20book%20Harish%20Court%20MG%20Road%20Gurugram.%0A%0ACheck-in%3A%20%0ACheck-out%3A%20%0AGuests%3A%20%0A%0AContact%3A%20" class="btn-book">Book Now</a>
+              <a href="tel:+918700401489" class="btn btn-outline">Call Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Harish Court - DLF Phase 3 -->
+        <article class="card" itemscope itemtype="https://schema.org/Hotel">
+          <div class="card-image">
+            <div class="hotel-placeholder hotel-corporate">
+              <div class="placeholder-content">
+                <span class="hotel-icon">🏢</span>
+                <h3 class="placeholder-title">Harish Court DLF</h3>
+                <div class="placeholder-location">Gurugram • DLF</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-category" itemprop="address">Gurugram DLF</div>
+            <h3 class="card-title" itemprop="name">Harish Court - DLF Phase 3</h3>
+            <p class="card-description" itemprop="description">Premium business hotel in DLF Phase 3 with banquet facilities, corporate contracting capabilities, and excellent connectivity to Cyber City and business districts.</p>
+            <div class="card-features">
+              <span class="feature-tag">DLF Phase 3</span>
+              <span class="feature-tag">Banquet Facilities</span>
+              <span class="feature-tag">Corporate Contracting</span>
+              <span class="feature-tag">Cyber City Access</span>
+              <span class="feature-tag">Business Districts</span>
+              <span class="feature-tag">Premium Service</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Hotel%20Booking%20-%20Harish%20Court%20DLF&body=Hello%20TrueCare%20Team%2C%0A%0AI%20would%20like%20to%20book%20Harish%20Court%20DLF%20Phase%203%20Gurugram.%0A%0ACheck-in%3A%20%0ACheck-out%3A%20%0AGuests%3A%20%0A%0AContact%3A%20" class="btn-book">Book Now</a>
+              <a href="tel:+918700401489" class="btn btn-outline">Call Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Zen Suites - Sector 14 -->
+        <article class="card" itemscope itemtype="https://schema.org/Hotel">
+          <div class="card-image">
+            <div class="hotel-placeholder hotel-corporate">
+              <div class="placeholder-content">
+                <span class="hotel-icon">🏨</span>
+                <h3 class="placeholder-title">Zen Suites</h3>
+                <div class="placeholder-location">Gurugram • Luxury</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-category" itemprop="address">Gurugram Luxury</div>
+            <h3 class="card-title" itemprop="name">Zen Suites - Sector 14</h3>
+            <p class="card-description" itemprop="description">LUXE Stays Collection featuring premium serviced apartments and hotel rooms with modern amenities, excellent service, and strategic Gurugram location.</p>
+            <div class="card-features">
+              <span class="feature-tag">Serviced Apartments</span>
+              <span class="feature-tag">LUXE Collection</span>
+              <span class="feature-tag">Premium Amenities</span>
+              <span class="feature-tag">Modern Design</span>
+              <span class="feature-tag">Business Services</span>
+              <span class="feature-tag">Strategic Location</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Hotel%20Booking%20-%20Zen%20Suites%20Gurugram&body=Hello%20TrueCare%20Team%2C%0A%0AI%20would%20like%20to%20book%20Zen%20Suites%20Sector%2014%20Gurugram.%0A%0ACheck-in%3A%20%0ACheck-out%3A%20%0AGuests%3A%20%0A%0AContact%3A%20" class="btn-book">Book Now</a>
+              <a href="tel:+918700401489" class="btn btn-outline">Call Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Zen Studio - Cyber City -->
+        <article class="card" itemscope itemtype="https://schema.org/Hotel">
+          <div class="card-image">
+            <div class="hotel-placeholder hotel-corporate">
+              <div class="placeholder-content">
+                <span class="hotel-icon">🏙️</span>
+                <h3 class="placeholder-title">Zen Studio</h3>
+                <div class="placeholder-location">Gurugram • Cyber City</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-category" itemprop="address">Gurugram Cyber City</div>
+            <h3 class="card-title" itemprop="name">Zen Studio - Cyber City</h3>
+            <p class="card-description" itemprop="description">Modern studio accommodations in prime Cyber City location with proximity to major corporate offices, IT companies, and business centers in Gurugram.</p>
+            <div class="card-features">
+              <span class="feature-tag">Studio Rooms</span>
+              <span class="feature-tag">Cyber City</span>
+              <span class="feature-tag">Corporate Proximity</span>
+              <span class="feature-tag">IT Companies</span>
+              <span class="feature-tag">Modern Amenities</span>
+              <span class="feature-tag">Business Centers</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Hotel%20Booking%20-%20Zen%20Studio%20Cyber%20City&body=Hello%20TrueCare%20Team%2C%0A%0AI%20would%20like%20to%20book%20Zen%20Studio%20Cyber%20City%20Gurugram.%0A%0ACheck-in%3A%20%0ACheck-out%3A%20%0AGuests%3A%20%0A%0AContact%3A%20" class="btn-book">Book Now</a>
+              <a href="tel:+918700401489" class="btn btn-outline">Call Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- DESTINATION RESORTS -->
+        <!-- Winsom Resorts & Spa - Jim Corbett -->
+        <article class="card" itemscope itemtype="https://schema.org/Resort">
+          <div class="card-image">
+            <div class="hotel-placeholder hotel-resort">
+              <div class="placeholder-content">
+                <span class="hotel-icon">🐅</span>
+                <h3 class="placeholder-title">Winsom Resorts</h3>
+                <div class="placeholder-location">Corbett • Wildlife</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-category" itemprop="address">Jim Corbett National Park</div>
+            <h3 class="card-title" itemprop="name">Winsom Resorts & Spa - Jim Corbett</h3>
+            <p class="card-description" itemprop="description">Luxury 4-star wildlife resort with comprehensive spa facilities, adventure activities, nature experiences, and premium accommodations in Jim Corbett National Park.</p>
+            <div class="card-features">
+              <span class="feature-tag">4-Star Resort</span>
+              <span class="feature-tag">Spa Facilities</span>
+              <span class="feature-tag">Wildlife Safari</span>
+              <span class="feature-tag">Adventure Activities</span>
+              <span class="feature-tag">Nature Experiences</span>
+              <span class="feature-tag">Premium Luxury</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Resort%20Booking%20-%20Winsom%20Resorts%20Corbett&body=Hello%20TrueCare%20Team%2C%0A%0AI%20would%20like%20to%20book%20Winsom%20Resorts%20%26%20Spa%20in%20Corbett.%0A%0ACheck-in%3A%20%0ACheck-out%3A%20%0AGuests%3A%20%0A%0AContact%3A%20" class="btn-book">Book Resort</a>
+              <a href="tel:+918700401489" class="btn btn-outline">Call Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hotel Star of Kashmir - Srinagar -->
+        <article class="card" itemscope itemtype="https://schema.org/Hotel">
+          <div class="card-image">
+            <div class="hotel-placeholder hotel-kashmir">
+              <div class="placeholder-content">
+                <span class="hotel-icon">⭐</span>
+                <h3 class="placeholder-title">Star of Kashmir</h3>
+                <div class="placeholder-location">Kashmir • Paradise</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-category" itemprop="address">Kashmir Paradise</div>
+            <h3 class="card-title" itemprop="name">Hotel Star of Kashmir - Srinagar</h3>
+            <p class="card-description" itemprop="description">Authentic Kashmiri hospitality with houseboat experiences, Dal Lake cultural tours, scenic mountain views, and traditional Kashmir culture immersion.</p>
+            <div class="card-features">
+              <span class="feature-tag">Houseboat Experience</span>
+              <span class="feature-tag">Dal Lake Tours</span>
+              <span class="feature-tag">Cultural Immersion</span>
+              <span class="feature-tag">Mountain Views</span>
+              <span class="feature-tag">Kashmir Culture</span>
+              <span class="feature-tag">Authentic Hospitality</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Hotel%20Booking%20-%20Star%20of%20Kashmir%20Srinagar&body=Hello%20TrueCare%20Team%2C%0A%0AI%20would%20like%20to%20experience%20Kashmir%20with%20Hotel%20Star%20of%20Kashmir.%0A%0ACheck-in%3A%20%0ACheck-out%3A%20%0AGuests%3A%20%0A%0AContact%3A%20" class="btn-book">Book Resort</a>
+              <a href="tel:+918700401489" class="btn btn-outline">Call Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hotel Sitata International - Rangri, Manali -->
+        <article class="card" itemscope itemtype="https://schema.org/Hotel">
+          <div class="card-image">
+            <div class="hotel-placeholder hotel-manali">
+              <div class="placeholder-content">
+                <span class="hotel-icon">🏔️</span>
+                <h3 class="placeholder-title">Sitata International</h3>
+                <div class="placeholder-location">Manali • Mountain</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-category" itemprop="address">Himachal Pradesh</div>
+            <h3 class="card-title" itemprop="name">Hotel Sitata International - Rangri, Manali</h3>
+            <p class="card-description" itemprop="description">International standard hospitality in Manali with adventure packages, mountain experiences, scenic locations, and comprehensive resort facilities in Himachal Pradesh.</p>
+            <div class="card-features">
+              <span class="feature-tag">International Standard</span>
+              <span class="feature-tag">Adventure Packages</span>
+              <span class="feature-tag">Mountain Experiences</span>
+              <span class="feature-tag">Scenic Location</span>
+              <span class="feature-tag">Resort Facilities</span>
+              <span class="feature-tag">Himachal Tourism</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Hotel%20Booking%20-%20Sitata%20International%20Manali&body=Hello%20TrueCare%20Team%2C%0A%0AI%20would%20like%20to%20book%20Hotel%20Sitata%20International%20in%20Manali.%0A%0ACheck-in%3A%20%0ACheck-out%3A%20%0AGuests%3A%20%0A%0AContact%3A%20" class="btn-book">Book Resort</a>
+              <a href="tel:+918700401489" class="btn btn-outline">Call Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- UP HOTELS -->
+        <!-- Hotel Rama Continental - Prayagraj -->
+        <article class="card" itemscope itemtype="https://schema.org/Hotel">
+          <div class="card-image">
+            <div class="hotel-placeholder hotel-business">
+              <div class="placeholder-content">
+                <span class="hotel-icon">🏨</span>
+                <h3 class="placeholder-title">Rama Continental</h3>
+                <div class="placeholder-location">UP • Business</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-category" itemprop="address">Uttar Pradesh</div>
+            <h3 class="card-title" itemprop="name">Hotel Rama Continental - Prayagraj</h3>
+            <p class="card-description" itemprop="description">Central location business hotel in Civil Lines, Prayagraj with comprehensive event readiness, modern amenities, and professional services for business and leisure travelers.</p>
+            <div class="card-features">
+              <span class="feature-tag">Central Location</span>
+              <span class="feature-tag">Event Ready</span>
+              <span class="feature-tag">Business Amenities</span>
+              <span class="feature-tag">Civil Lines</span>
+              <span class="feature-tag">Professional Service</span>
+              <span class="feature-tag">Modern Facilities</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Hotel%20Booking%20-%20Rama%20Continental%20Prayagraj&body=Hello%20TrueCare%20Team%2C%0A%0AI%20would%20like%20to%20book%20Hotel%20Rama%20Continental%20in%20Prayagraj.%0A%0ACheck-in%3A%20%0ACheck-out%3A%20%0AGuests%3A%20%0A%0AContact%3A%20" class="btn-book">Book Now</a>
+              <a href="tel:+918700401489" class="btn btn-outline">Call Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Advantage Inn - Prayagraj -->
+        <article class="card" itemscope itemtype="https://schema.org/Hotel">
+          <div class="card-image">
+            <div class="hotel-placeholder hotel-business">
+              <div class="placeholder-content">
+                <span class="hotel-icon">🏨</span>
+                <h3 class="placeholder-title">Advantage Inn</h3>
+                <div class="placeholder-location">UP • Comfortable</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-category" itemprop="address">Uttar Pradesh</div>
+            <h3 class="card-title" itemprop="name">Advantage Inn - Prayagraj</h3>
+            <p class="card-description" itemprop="description">Business-friendly accommodation in Civil Lines, Prayagraj with dining support, comfortable rooms, and convenient location for corporate and leisure guests.</p>
+            <div class="card-features">
+              <span class="feature-tag">Business Friendly</span>
+              <span class="feature-tag">Dining Support</span>
+              <span class="feature-tag">Comfortable Rooms</span>
+              <span class="feature-tag">Convenient Location</span>
+              <span class="feature-tag">Corporate Service</span>
+              <span class="feature-tag">Leisure Guests</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Hotel%20Booking%20-%20Advantage%20Inn%20Prayagraj&body=Hello%20TrueCare%20Team%2C%0A%0AI%20would%20like%20to%20book%20Advantage%20Inn%20in%20Prayagraj.%0A%0ACheck-in%3A%20%0ACheck-out%3A%20%0AGuests%3A%20%0A%0AContact%3A%20" class="btn-book">Book Now</a>
+              <a href="tel:+918700401489" class="btn btn-outline">Call Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Square Inn - Varanasi -->
+        <article class="card" itemscope itemtype="https://schema.org/Hotel">
+          <div class="card-image">
+            <div class="hotel-placeholder hotel-business">
+              <div class="placeholder-content">
+                <span class="hotel-icon">🏛️</span>
+                <h3 class="placeholder-title">Square Inn</h3>
+                <div class="placeholder-location">UP • Heritage</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-category" itemprop="address">Uttar Pradesh</div>
+            <h3 class="card-title" itemprop="name">Square Inn - Varanasi</h3>
+            <p class="card-description" itemprop="description">Convenient accommodation in Cantonment area of Varanasi with central access to heritage sites, comfortable rooms, and proximity to cultural attractions.</p>
+            <div class="card-features">
+              <span class="feature-tag">Central Access</span>
+              <span class="feature-tag">Heritage Sites</span>
+              <span class="feature-tag">Comfortable Rooms</span>
+              <span class="feature-tag">Cultural Attractions</span>
+              <span class="feature-tag">Cantonment Area</span>
+              <span class="feature-tag">Tourist Friendly</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Hotel%20Booking%20-%20Square%20Inn%20Varanasi&body=Hello%20TrueCare%20Team%2C%0A%0AI%20would%20like%20to%20book%20Square%20Inn%20in%20Varanasi.%0A%0ACheck-in%3A%20%0ACheck-out%3A%20%0AGuests%3A%20%0A%0AContact%3A%20" class="btn-book">Book Now</a>
+              <a href="tel:+918700401489" class="btn btn-outline">Call Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- JHARKHAND HOTEL -->
+        <!-- Vivana - The Business Hotel, Dhanbad -->
+        <article class="card" itemscope itemtype="https://schema.org/Hotel">
+          <div class="card-image">
+            <div class="hotel-placeholder hotel-business">
+              <div class="placeholder-content">
+                <span class="hotel-icon">💼</span>
+                <h3 class="placeholder-title">Vivana Business Hotel</h3>
+                <div class="placeholder-location">Jharkhand • Business</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-category" itemprop="address">Jharkhand</div>
+            <h3 class="card-title" itemprop="name">Vivana - The Business Hotel, Dhanbad</h3>
+            <p class="card-description" itemprop="description">Corporate-focused hotel in Dhanbad with comprehensive meeting facilities, modern amenities, business center, and professional services for corporate travelers.</p>
+            <div class="card-features">
+              <span class="feature-tag">Corporate Hotel</span>
+              <span class="feature-tag">Meeting Facilities</span>
+              <span class="feature-tag">Business Center</span>
+              <span class="feature-tag">Modern Amenities</span>
+              <span class="feature-tag">Professional Service</span>
+              <span class="feature-tag">Corporate Travelers</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Hotel%20Booking%20-%20Vivana%20Business%20Hotel%20Dhanbad&body=Hello%20TrueCare%20Team%2C%0A%0AI%20would%20like%20to%20book%20Vivana%20Business%20Hotel%20in%20Dhanbad.%0A%0ACheck-in%3A%20%0ACheck-out%3A%20%0AGuests%3A%20%0A%0AContact%3A%20" class="btn-book">Book Now</a>
+              <a href="tel:+918700401489" class="btn btn-outline">Call Now</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Partner Portfolio Section -->
+      <div style="margin-top: 64px; padding: 32px; background: rgba(255,255,255,0.5); border-radius: 16px; text-align: center;">
+        <h3 style="color: var(--primary-trust); margin-bottom: 16px;">Managed/Partner Hotels</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 24px;">Premium properties under our management and partnership network</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center;">
+          <span class="feature-tag" style="background: #fef3c7; color: var(--text-primary);">Masaga by Qcent - Gurugram</span>
+          <span class="feature-tag" style="background: #fef3c7; color: var(--text-primary);">Qcent Woods Resort & Spa - Sector 44, Gurugram</span>
+          <span class="feature-tag" style="background: #fef3c7; color: var(--text-primary);">Hotel Sakura by Maps Group - Sector 45, Gurugram</span>
+          <span class="feature-tag" style="background: #fef3c7; color: var(--text-primary);">Qcent Woods Resort & Spa - Rishikesh</span>
+          <span class="feature-tag" style="background: #fef3c7; color: var(--text-primary);">Qcent Corbett - Jim Corbett</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Hub Section -->
+    <section id="events" class="section-container" style="background: linear-gradient(135deg, #fef3c7 0%, #fef7ed 50%, #f8fafc 100%);">
+      <div class="section-header">
+        <h2 class="section-title">Complete Event Management & Wedding Services</h2>
+        <p class="section-subtitle">Turnkey planning and execution for weddings, corporate events, MICE, and destination celebrations across India</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-content">
+            <div class="card-category">Weddings & Social</div>
+            <h3 class="card-title">Wedding Planning & Social Celebrations</h3>
+            <p class="card-description">Complete wedding planning, receptions, haldi/mehendi ceremonies, anniversaries, and family celebrations with venue scouting, decor, F&B, and logistics management.</p>
+            <div class="card-features">
+              <span class="feature-tag">Venue Scouting</span>
+              <span class="feature-tag">Decor & Themes</span>
+              <span class="feature-tag">F&B Curation</span>
+              <span class="feature-tag">Guest Management</span>
+              <span class="feature-tag">Photography</span>
+              <span class="feature-tag">Vendor Management</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Wedding%20Planning%20Services&body=Hello%20TrueCare%20Team%2C%0A%0AI%20need%20wedding%20planning%20services.%0A%0AWedding%20Date%3A%20%0AGuests%3A%20%0ALocation%3A%20%0A%0AContact%3A%20" class="btn-book">Plan My Wedding</a>
+              <a href="https://wa.me/918700401489?text=Hello%20TrueCare%20Team!%20I%20need%20wedding%20planning%20services." class="btn btn-outline">WhatsApp Planner</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-content">
+            <div class="card-category">Corporate & MICE</div>
+            <h3 class="card-title">Corporate Events & MICE Services</h3>
+            <p class="card-description">Conference management, exhibitions, product launches, training programs, and corporate offsites with AV staging, hospitality desks, and travel logistics.</p>
+            <div class="card-features">
+              <span class="feature-tag">Conference Management</span>
+              <span class="feature-tag">AV & Staging</span>
+              <span class="feature-tag">Product Launches</span>
+              <span class="feature-tag">Training Programs</span>
+              <span class="feature-tag">Corporate Offsites</span>
+              <span class="feature-tag">Travel Logistics</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Corporate%20Event%20Planning&body=Hello%20TrueCare%20Team%2C%0A%0AI%20need%20corporate%20event%20planning.%0A%0AEvent%20Type%3A%20%0ADate%3A%20%0AAttendees%3A%20%0A%0AContact%3A%20" class="btn-book">Plan Corporate Event</a>
+              <a href="tel:+918700401489" class="btn btn-outline">Event Consultation</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-content">
+            <div class="card-category">Group Travel</div>
+            <h3 class="card-title">Group Travel (GITs/FITs)</h3>
+            <p class="card-description">Inbound group and individual travel planning, pilgrimage tours, educational trips with transport, accommodation, sightseeing, and meal arrangements.</p>
+            <div class="card-features">
+              <span class="feature-tag">Group Itineraries</span>
+              <span class="feature-tag">Transport Arrangements</span>
+              <span class="feature-tag">Hotel Bookings</span>
+              <span class="feature-tag">Sightseeing Plans</span>
+              <span class="feature-tag">Meal Arrangements</span>
+              <span class="feature-tag">On-ground Support</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Group%20Travel%20Planning&body=Hello%20TrueCare%20Team%2C%0A%0AI%20need%20group%20travel%20planning.%0A%0ATravel%20Dates%3A%20%0AGroup%20Size%3A%20%0ADestinations%3A%20%0A%0AContact%3A%20" class="btn-book">Get Group Itinerary</a>
+              <a href="https://wa.me/918700401489?text=Hello%20TrueCare%20Team!%20I%20need%20group%20travel%20planning%20services." class="btn btn-outline">WhatsApp Travel Desk</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-content">
+            <div class="card-category">Destination Events</div>
+            <h3 class="card-title">Destination Event Packages</h3>
+            <p class="card-description">Curated destination events in Kashmir, Corbett, Manali, Rishikesh, and Delhi NCR with venue partnerships and local vendor ecosystems.</p>
+            <div class="card-features">
+              <span class="feature-tag">Kashmir Destinations</span>
+              <span class="feature-tag">Corbett & Wildlife</span>
+              <span class="feature-tag">Manali Mountains</span>
+              <span class="feature-tag">Rishikesh Riverside</span>
+              <span class="feature-tag">Delhi NCR Venues</span>
+              <span class="feature-tag">Curated Packages</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Destination%20Event%20Planning&body=Hello%20TrueCare%20Team%2C%0A%0AI%20need%20destination%20event%20planning.%0A%0AEvent%20Type%3A%20%0APreferred%20Destination%3A%20%0ADate%3A%20%0A%0AContact%3A%20" class="btn-book">Explore Destination Packages</a>
+              <a href="tel:+918700401489" class="btn btn-outline">Enquire Now</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Hotel Management Services Section -->
+    <section id="management" class="section-container" style="background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 50%, #f8fafc 100%);">
+      <div class="section-header">
+        <h2 class="section-title">Hotel Management & Revenue Growth Services</h2>
+        <p class="section-subtitle">Performance-focused management solutions with revenue optimization, digital marketing, operations excellence, and technology integration</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-content">
+            <div class="card-category">Revenue & Distribution</div>
+            <h3 class="card-title">Revenue Optimization & Distribution</h3>
+            <p class="card-description">Dynamic pricing strategies, channel mix optimization, rate parity monitoring, and inventory control with performance tracking.</p>
+            <div class="card-features">
+              <span class="feature-tag">Dynamic Pricing</span>
+              <span class="feature-tag">Channel Mix</span>
+              <span class="feature-tag">Rate Parity</span>
+              <span class="feature-tag">Inventory Control</span>
+              <span class="feature-tag">OTA Management</span>
+              <span class="feature-tag">Performance Reports</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-content">
+            <div class="card-category">Digital & Direct</div>
+            <h3 class="card-title">SEO, Digital Marketing & Direct Booking</h3>
+            <p class="card-description">SEO optimization, website CRO, social media management, reputation management, and direct booking growth strategies.</p>
+            <div class="card-features">
+              <span class="feature-tag">SEO Optimization</span>
+              <span class="feature-tag">Website CRO</span>
+              <span class="feature-tag">Social Media</span>
+              <span class="feature-tag">Reputation Management</span>
+              <span class="feature-tag">Direct Booking Growth</span>
+              <span class="feature-tag">Email Marketing</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-content">
+            <div class="card-category">Operations Excellence</div>
+            <h3 class="card-title">Operations & Service Excellence</h3>
+            <p class="card-description">SOPs development, quality audits, staff training, upsell programs, guest journey optimization, and NPS improvement.</p>
+            <div class="card-features">
+              <span class="feature-tag">SOPs Development</span>
+              <span class="feature-tag">Quality Audits</span>
+              <span class="feature-tag">Staff Training</span>
+              <span class="feature-tag">Upsell Programs</span>
+              <span class="feature-tag">Guest Journey</span>
+              <span class="feature-tag">NPS Tracking</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-content">
+            <div class="card-category">Engagement Models</div>
+            <h3 class="card-title">Management & Consulting Packages</h3>
+            <p class="card-description">Managed services, project consulting, pre-opening support, and turnaround packages with KPI tracking (ADR, RevPAR, Occupancy).</p>
+            <div class="card-features">
+              <span class="feature-tag">Managed Services</span>
+              <span class="feature-tag">Project Consulting</span>
+              <span class="feature-tag">Pre-opening Support</span>
+              <span class="feature-tag">Turnaround Packages</span>
+              <span class="feature-tag">KPI Tracking</span>
+              <span class="feature-tag">Performance Based</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Hotel%20Management%20Services&body=Hello%20TrueCare%20Team%2C%0A%0AI%20need%20hotel%20management%20services.%0A%0AProperty%20Details%3A%20%0ALocation%3A%20%0ARoom%20Count%3A%20%0ACurrent%20Challenges%3A%20%0A%0AContact%3A%20" class="btn-book">Request Management Proposal</a>
+              <a href="https://wa.me/918700401489?text=Hello%20TrueCare%20Team!%20I%20need%20hotel%20management%20services." class="btn btn-outline">Talk to GM Team</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Greentech Facilities Section (Expanded) -->
+    <section id="greentech" class="section-container" style="padding: 80px 24px; background: linear-gradient(135deg, #f0f9f4 0%, #e6f7ea 50%, #f8fafc 100%);">
+      <div class="section-header">
+        <h2 class="section-title" style="color: var(--primary-trust);">TrueCare Greentech Facilities & Solutions</h2>
+        <p class="section-subtitle">Advanced water treatment, STP/ETP/WTP/RO systems, ozonation, AMCs with SLAs, compliance kits, and sustainable facilities management</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-content">
+            <div class="card-category" style="color: #2d7a3e;">Water Treatment</div>
+            <h3 class="card-title">STP/ETP/WTP & RO Systems</h3>
+            <p class="card-description">Complete setup, operations, and 24/7 maintenance of sewage, effluent, and water treatment plants with RO and ozonation systems.</p>
+            <div class="card-features">
+              <span class="feature-tag">STP (SBR/MBBR)</span>
+              <span class="feature-tag">ETP Systems</span>
+              <span class="feature-tag">WTP/RO Plants</span>
+              <span class="feature-tag">Ozonation Units</span>
+              <span class="feature-tag">24/7 O&M</span>
+              <span class="feature-tag">Remote Monitoring</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-content">
+            <div class="card-category" style="color: #2d7a3e;">Advanced Solutions</div>
+            <h3 class="card-title">Sludge Management & Retrofits</h3>
+            <p class="card-description">Sludge handling/dewatering, membrane upgrades (UF/MBR), odor control, ZLD advisory, and plant retrofits with AMCs.</p>
+            <div class="card-features">
+              <span class="feature-tag">Sludge Handling</span>
+              <span class="feature-tag">Membrane Upgrades</span>
+              <span class="feature-tag">Odor Control</span>
+              <span class="feature-tag">ZLD Advisory</span>
+              <span class="feature-tag">Retrofits</span>
+              <span class="feature-tag">AMCs with SLAs</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-content">
+            <div class="card-category" style="color: #2d7a3e;">Industries Served</div>
+            <h3 class="card-title">Comprehensive Industry Coverage</h3>
+            <p class="card-description">Hotels/resorts, hospitals, educational institutions, manufacturing, residential societies, F&B, malls/retail, data centers, transportation hubs.</p>
+            <div class="card-features">
+              <span class="feature-tag">Hotels & Resorts</span>
+              <span class="feature-tag">Hospitals</span>
+              <span class="feature-tag">Educational Institutes</span>
+              <span class="feature-tag">Manufacturing</span>
+              <span class="feature-tag">Residential Societies</span>
+              <span class="feature-tag">Data Centers</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-content">
+            <div class="card-category" style="color: #2d7a3e;">Support & Compliance</div>
+            <h3 class="card-title">Technical Support & Compliance</h3>
+            <p class="card-description">Design/BOQ/P&ID, installation, commissioning, operator training, spares/chemicals supply, PCB consent documentation, compliance reports.</p>
+            <div class="card-features">
+              <span class="feature-tag">Design & BOQ</span>
+              <span class="feature-tag">Installation</span>
+              <span class="feature-tag">Operator Training</span>
+              <span class="feature-tag">Spares & Chemicals</span>
+              <span class="feature-tag">PCB Consent Kits</span>
+              <span class="feature-tag">Compliance Reports</span>
+            </div>
+            <div class="booking-actions">
+              <a href="mailto:wetruecare@gmail.com?subject=Greentech%20Technical%20Proposal&body=Hello%20TrueCare%20Team%2C%0A%0AI%20need%20greentech%20solutions.%0A%0AIndustry%3A%20%0AFlow%20Rate%3A%20%0ALocation%3A%20%0ARequirements%3A%20%0A%0AContact%3A%20" class="btn-book" style="background: #2d7a3e; color: #fff;">Get Technical Proposal</a>
+              <a href="https://wa.me/918700401489?text=Hello%20TrueCare%20Team!%20I%20need%20greentech%20solutions." class="btn btn-outline">Engineer on WhatsApp</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title" style="color: white;">Get Exclusive Quote & Premium Services</h2>
+          <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">Contact India's most trusted hospitality partner for hotels, events, management services, and greentech solutions with guaranteed best rates</p>
+        </div>
+
+        <div class="contact-form-container">
+          <h3 style="text-align: center; margin-bottom: 32px; color: var(--attention-gold); font-size: 24px;">Get Personalized Quote Within 24 Hours</h3>
           
-          <div style="display:flex; align-items:center; gap:16px;">
-            <div style="background:var(--accent-color); color:#fff; width:50px; height:50px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold;">🎬</div>
-            <div>
-              <h5 style="margin:0; color:var(--primary-color);">Tour Operators & Influencers</h5>
-              <p style="margin:0; color:var(--text-light); font-size:0.9rem;">Experiential packages and collaboration</p>
+          <form class="contact-form" id="premiumContactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" class="form-input" required placeholder="Enter your full name">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="emailAddress">Email Address</label>
+                <input type="email" id="emailAddress" name="emailAddress" class="form-input" required placeholder="your.email@domain.com">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="phoneNumber">Phone Number</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" class="form-input" required placeholder="+91-XXXXXXXXXX">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="cityLocation">City/Location</label>
+                <input type="text" id="cityLocation" name="cityLocation" class="form-input" required placeholder="Delhi, Mumbai, Pune, etc.">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="serviceType">Service Required</label>
+              <select id="serviceType" name="serviceType" class="form-input" required>
+                <option value="">Select Premium Service</option>
+                <option value="luxury-hotel-booking">Luxury Hotel Booking</option>
+                <option value="premium-wedding-management">Premium Wedding Management</option>
+                <option value="corporate-events-mice">Corporate Events & MICE</option>
+                <option value="b2b-hotel-management">B2B Hotel Management</option>
+                <option value="hospitality-consulting">Hospitality Consulting</option>
+                <option value="greentech-solutions">Greentech Solutions</option>
+                <option value="facility-management">Facility Management</option>
+                <option value="multiple-services">Multiple Services</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="projectDetails">Project Details & Requirements</label>
+              <textarea id="projectDetails" name="projectDetails" class="form-input form-textarea" placeholder="Please describe your requirements in detail"></textarea>
+            </div>
+
+            <div class="form-group" style="text-align: center;">
+              <button type="submit" class="btn btn-primary" style="padding: 18px 48px; font-size: 18px; font-weight: 700;">Get Exclusive Quote</button>
+            </div>
+          </form>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <h4>Direct Booking Hotline</h4>
+              <p><a href="tel:+918700401489">+91-8700401489</a></p>
+              <p style="font-size: 12px; opacity: 0.8;">Available 24/7 for instant bookings</p>
+            </div>
+            <div class="contact-item">
+              <h4>Premium Services Email</h4>
+              <p><a href="mailto:wetruecare@gmail.com">wetruecare@gmail.com</a></p>
+              <p style="font-size: 12px; opacity: 0.8;">Response within 24 hours guaranteed</p>
+            </div>
+            <div class="contact-item">
+              <h4>Official Website</h4>
+              <p><a href="https://www.truecarehandf.in/">www.truecarehandf.in</a></p>
+              <p style="font-size: 12px; opacity: 0.8;">Direct booking exclusive benefits</p>
+            </div>
+          </div>
+
+          <div class="social-section">
+            <h3 class="social-title">Follow Us for Exclusive Updates & Offers</h3>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/Omkar.chaudh/" class="social-icon facebook" target="_blank" rel="noopener noreferrer" aria-label="Follow TrueCare on Facebook">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/truecarehospitality/" class="social-icon instagram" target="_blank" rel="noopener noreferrer" aria-label="Follow TrueCare on Instagram">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+  </main>
 
-<!-- TRUECARE GREENTECH SECTION -->
-<section id="greentech" style="padding:80px 20px; background:#f0f7f4;">
-  <div class="container">
-    <div class="section-header">
-      <h2 style="color:var(--primary-color);">🌱 TrueCare Greentech Facilities</h2>
-      <p>Water treatment, STP/ETP O&M, and sustainable facilities management for commercial properties</p>
-    </div>
-    
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:50px;">
-      <!-- GREENTECH SERVICES -->
-      <div>
-        <h3 style="color:#2d7a3e; font-size:2rem; margin-bottom:32px;">Our Environmental Solutions</h3>
-        
-        <div class="service-card" style="margin-bottom:24px;">
-          <h4 style="color:var(--primary-color); margin-bottom:12px;">🏭 STP/ETP Operations & Maintenance</h4>
-          <p>Complete setup, operations, and 24/7 maintenance of sewage treatment plants and effluent treatment plants for commercial properties.</p>
-        </div>
-        
-        <div class="service-card" style="margin-bottom:24px;">
-          <h4 style="color:var(--primary-color); margin-bottom:12px;">💧 Water Recycling & Treatment Systems</h4>
-          <p>Greywater recycling, RO systems, ozonation, and filtration systems for sustainable water management.</p>
-        </div>
-        
-        <div class="service-card" style="margin-bottom:24px;">
-          <h4 style="color:var(--primary-color); margin-bottom:12px;">⚙️ Automation & Monitoring</h4>
-          <p>IoT-enabled monitoring systems, automated reporting, and predictive maintenance for optimal performance.</p>
-        </div>
-        
-        <div class="service-card" style="margin-bottom:32px;">
-          <h4 style="color:var(--primary-color); margin-bottom:12px;">📋 Compliance & Consulting</h4>
-          <p>Water audits, regulatory compliance, ESG reporting, and environmental consulting for commercial facilities.</p>
-        </div>
-        
-        <a href="mailto:wetruecare@gmail.com?subject=Water Treatment Solutions Inquiry&body=Dear TrueCare Greentech Team,%0D%0A%0D%0AI would like to inquire about water treatment solutions.%0D%0A%0D%0AProject Type: %0D%0ALocation: %0D%0ACapacity Required: %0D%0ATimeline: %0D%0AContact Person: %0D%0APhone: %0D%0A%0D%0AThank you!" class="btn" style="background:#2d7a3e; color:#fff;">Get Water Solutions</a>
-      </div>
-      
-      <!-- TARGET CLIENTS -->
-      <div>
-        <h3 style="color:#2d7a3e; font-size:2rem; margin-bottom:32px;">Industries We Serve</h3>
-        
-        <div style="display:grid; gap:20px;">
-          <div class="service-card">
-            <h5 style="margin:0 0 8px; color:var(--primary-color);">🏨 Hotels & Resorts</h5>
-            <p style="margin:0; font-size:0.9rem;">Water treatment systems for hospitality properties</p>
-          </div>
-          
-          <div class="service-card">
-            <h5 style="margin:0 0 8px; color:var(--primary-color);">🏢 Commercial Buildings & Offices</h5>
-            <p style="margin:0; font-size:0.9rem;">STP/ETP solutions for corporate complexes</p>
-          </div>
-          
-          <div class="service-card">
-            <h5 style="margin:0 0 8px; color:var(--primary-color);">🏭 Industrial Facilities</h5>
-            <p style="margin:0; font-size:0.9rem;">Industrial wastewater treatment and recycling</p>
-          </div>
-          
-          <div class="service-card">
-            <h5 style="margin:0 0 8px; color:var(--primary-color);">🏘️ Residential Communities</h5>
-            <p style="margin:0; font-size:0.9rem;">Community-scale water treatment systems</p>
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-content">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>TrueCare Hotels, Hospitality, Facilities & Services</h4>
+          <p style="color: rgba(255,255,255,0.8); margin-bottom: 20px; line-height: 1.7;">
+            India's most trusted hospitality company with 25+ luxury hotels across Delhi NCR, Mumbai, Pune, Kashmir, Corbett & major cities. Complete event management, B2B services, and greentech solutions since 2015.
+          </p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/Omkar.chaudh/" class="social-icon facebook" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/truecarehospitality/" class="social-icon instagram" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
           </div>
         </div>
-        
-        <!-- SUSTAINABILITY BADGE -->
-        <div style="background:#2d7a3e; color:#fff; padding:24px; border-radius:12px; text-align:center; margin-top:32px;">
-          <h4 style="margin:0 0 8px;">♻️ Sustainability Partner</h4>
-          <p style="margin:0; font-size:0.9rem; opacity:0.9;">Helping businesses achieve ESG compliance and environmental sustainability goals</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- CONTACT FORM SECTION -->
-<section id="quote" class="contact-form">
-  <div class="form-container">
-    <h2 style="font-size:2.4rem; margin-bottom:16px;">Ready to Get Started?</h2>
-    <p style="font-size:1.2rem; margin-bottom:40px; opacity:0.9;">Choose your service and get a personalized quote within 24 hours</p>
-    
-    <form action="mailto:wetruecare@gmail.com" method="post" enctype="text/plain" class="form-grid">
-      
-      <!-- SERVICE SELECTOR -->
-      <div class="form-group">
-        <label for="business-division">Select Service Division:</label>
-        <select id="business-division" name="business-division" required class="form-control">
-          <option>TrueCare Hotels - Room Booking</option>
-          <option>TrueCare Hotels - Wedding Venue</option>
-          <option>TrueCare Hotels - Corporate Events</option>
-          <option>TrueCare Hospitality - Hotel Management Partnership</option>
-          <option>TrueCare Hospitality - Consulting Services</option>
-          <option>TrueCare Hospitality - Corporate Accommodation</option>
-          <option>TrueCare Greentech - STP/ETP Setup</option>
-          <option>TrueCare Greentech - O&M Services</option>
-          <option>TrueCare Greentech - Water Treatment Consulting</option>
-          <option>Other Services</option>
-        </select>
-      </div>
-      
-      <!-- CONTACT DETAILS -->
-      <div class="form-row">
-        <div class="form-group">
-          <label for="name">Full Name *</label>
-          <input id="name" name="name" required class="form-control">
+        <div class="footer-section">
+          <h4>Hotel Destinations</h4>
+          <div class="footer-links">
+            <a href="#hotels">Anvi Residency - Noida</a>
+            <a href="#hotels">Hotel Vivaan - Noida</a>
+            <a href="#hotels">Elite Grand Hotels - Noida</a>
+            <a href="#hotels">The Pamposh - Delhi</a>
+            <a href="#hotels">Winsom Resorts - Corbett</a>
+            <a href="#hotels">Star of Kashmir - Srinagar</a>
+            <a href="#hotels">Sitata International - Manali</a>
+            <a href="#hotels">View All 25+ Hotels</a>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="phone">Phone Number *</label>
-          <input id="phone" name="phone" required class="form-control">
-        </div>
-      </div>
-      
-      <div class="form-group">
-        <label for="email">Email Address *</label>
-        <input id="email" name="email" type="email" required class="form-control">
-      </div>
-      
-      <div class="form-row">
-        <div class="form-group">
-          <label for="company">Company/Organization</label>
-          <input id="company" name="company" class="form-control">
-        </div>
-        <div class="form-group">
-          <label for="city">City/Location</label>
-          <input id="city" name="city" placeholder="Delhi, Noida, Gurgaon..." class="form-control">
-        </div>
-      </div>
-      
-      <div class="form-group">
-        <label for="requirements">Project Requirements</label>
-        <textarea id="requirements" name="requirements" rows="4" class="form-control" placeholder="Tell us about your specific needs..."></textarea>
-      </div>
-      
-      <button type="submit" class="btn btn-primary" style="width:100%; padding:20px; font-size:1.2rem; margin-top:20px;">Submit Request - Get Quote in 24 Hours</button>
-    </form>
-    
-    <!-- INSTANT CONTACT -->
-    <div style="margin-top:40px; padding:32px; background:rgba(255,255,255,0.1); border-radius:12px;">
-      <h3 style="margin-bottom:16px;">Need Immediate Assistance?</h3>
-      <div style="display:flex; gap:24px; justify-content:center; flex-wrap:wrap; margin-bottom: 20px;">
-        <a href="tel:+918700401489" class="btn btn-primary">📞 +91-8700401489</a>
-        <a href="tel:+919871626618" class="btn btn-primary">📞 +91-9871626618</a>
-        <a href="mailto:wetruecare@gmail.com" class="btn" style="border:2px solid #fff; color:#fff;">✉️ Email Us</a>
-      </div>
-      
-      <!-- SOCIAL MEDIA ICONS -->
-      <div class="social-icons">
-        <a href="https://www.facebook.com/Omkar.chaudh/" target="_blank" class="social-icon facebook">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://www.instagram.com/truecarehospitality/" target="_blank" class="social-icon instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <!-- COMPANY INFO -->
-      <div class="footer-section">
-        <h4>TrueCare Hospitality and Facilities Pvt Ltd</h4>
-        <p style="line-height:1.6; opacity:0.8; margin-bottom:16px;">"Service with Relentless Integrity" - Your trusted partner for hotels, B2B hospitality management, and sustainable facility solutions across Delhi NCR & India.</p>
-        <div class="social-icons">
-          <a href="https://www.facebook.com/Omkar.chaudh/" target="_blank" class="social-icon facebook">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://www.instagram.com/truecarehospitality/" target="_blank" class="social-icon instagram">
-            <i class="fab fa-instagram"></i>
-          </a>
+        <div class="footer-section">
+          <h4>Premium Services</h4>
+          <div class="footer-links">
+            <a href="#hotels">Hotel Bookings</a>
+            <a href="#events">Wedding & Event Management</a>
+            <a href="#events">Corporate Events & MICE</a>
+            <a href="#management">Hotel Management</a>
+            <a href="#management">Revenue Optimization</a>
+            <a href="#greentech">Greentech Solutions</a>
+            <a href="#greentech">STP/ETP/WTP Systems</a>
+          </div>
         </div>
-      </div>
-      
-      <!-- QUICK LINKS -->
-      <div class="footer-section">
-        <h4>Quick Access</h4>
-        <div class="footer-links">
-          <a href="#hotels">🏨 Book Hotels (B2C)</a>
-          <a href="#hospitality">🤝 B2B Hotel Management</a>
-          <a href="#greentech">🌱 Water Treatment Solutions</a>
-          <a href="#quote">💬 Get Free Quote</a>
-        </div>
-      </div>
-      
-      <!-- CONTACT -->
-      <div class="footer-section">
-        <h4>Contact Information</h4>
-        <div class="footer-links">
-          <p style="margin:0;">📞 <strong>Sales:</strong> +91-9871626618</p>
-          <p style="margin:0;">📞 <strong>Support:</strong> +91-8700401489</p>
-          <p style="margin:0;">✉️ wetruecare@gmail.com</p>
-          <p style="margin:0;">✉️ truecareservicesnbusinesses@gmail.com</p>
-          <p style="margin:0;">🌐 www.truecarehandf.in</p>
-          <p style="margin:0;">📍 Delhi NCR, India</p>
-        </div>
-      </div>
-      
-      <!-- SERVICE AREAS -->
-      <div class="footer-section">
-        <h4>Service Areas</h4>
-        <div class="footer-links">
-          <p style="margin:0;">• Delhi NCR & Gurgaon</p>
-          <p style="margin:0;">• Noida & Greater Noida</p>
-          <p style="margin:0;">• Faridabad & Ghaziabad</p>
-          <p style="margin:0;">• Pan India Operations</p>
-          <p style="margin:0;">• International Consulting</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="footer-bottom">
-      <p style="margin:0 0 8px; font-size:1.1rem;">&copy; 2025 TrueCare Hospitality and Facilities Pvt Ltd | All Rights Reserved</p>
-      <p style="margin:0; opacity:0.6; font-size:0.9rem;">GSTIN: YOUR-GST-NUMBER | CIN: YOUR-CIN-NUMBER</p>
-    </div>
-  </div>
-</footer>
 
-<!-- STRUCTURED DATA -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "TrueCare Hospitality and Facilities Pvt Ltd",
-  "alternateName": ["TrueCare Hotels", "TrueCare Hospitality", "TrueCare Greentech"],
-  "url": "https://www.truecarehandf.in",
-  "logo": "https://www.truecarehandf.in/assets/images/Truecare-logo.jpg",
-  "contactPoint": [
-    {
+        <div class="footer-section">
+          <h4>Contact & Support</h4>
+          <div class="contact-details" style="color: rgba(255,255,255,0.8);">
+            <p style="margin-bottom: 12px;">Booking: <a href="tel:+918700401489" style="color: rgba(255,255,255,0.9);">+91-8700401489</a></p>
+            <p style="margin-bottom: 12px;">Email: <a href="mailto:wetruecare@gmail.com" style="color: rgba(255,255,255,0.9);">wetruecare@gmail.com</a></p>
+            <p style="margin-bottom: 12px;">Website: <a href="https://www.truecarehandf.in/" style="color: rgba(255,255,255,0.9);">www.truecarehandf.in</a></p>
+            <p style="font-size: 14px; opacity: 0.8; line-height: 1.6;">
+              24/7 Support Available<br>
+              Quote Response Within 24 Hours<br>
+              Secure Booking Platform
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 TrueCare Hotels, Hospitality, Facilities & Services Pvt Ltd. All rights reserved.</p>
+        <p style="margin-top: 12px; font-size: 14px; opacity: 0.7; line-height: 1.6;">
+          India's Most Trusted Hospitality Partner | 25+ Hotels | Wedding & Event Management | Hotel Management & Revenue Growth | Greentech Solutions | Service with Relentless Integrity
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Widget -->
+  <div class="whatsapp-widget">
+    <a href="https://wa.me/918700401489?text=Hello%20TrueCare%20Hotels%2C%20Hospitality%2C%20Facilities%20%26%20Services%20Team%21%20🏨🎉%20I%20am%20interested%20in%20your%20premium%20services.%20I%20found%20you%20have%2025%2B%20luxury%20hotels%20across%20India%20including%20Delhi%20NCR%2C%20Mumbai%2C%20Pune%2C%20Kashmir%2C%20Corbett%20and%20other%20destinations.%20Please%20assist%20me%20with%20booking%20information%20and%20exclusive%20direct%20booking%20benefits." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+      <svg class="whatsapp-icon" viewBox="0 0 32 32" fill="currentColor">
+        <path d="M19.11 17.6c-.3-.1-1.75-.87-2.02-.97-.27-.1-.47-.15-.66.15-.2.3-.76.97-.93 1.17-.17.2-.34.22-.63.07-1.54-.76-2.87-1.78-3.77-3.3-.19-.32-.004-.5.14-.66.15-.14.33-.39.49-.58.16-.2.21-.34.32-.57.11-.23.055-.43-.03-.6-.09-.17-.66-1.6-.91-2.18-.24-.56-.49-.48-.66-.49l-.58-.01c-.2 0-.52.195-.79.46-.65.63-.99 1.51-.99 2.47 0 .36.07.7.2 1.02.65 2.25 2.24 4.16 4.81 5.65.36.21.64.33.87.42.36.14.69.12.95.07.29-.05.91-.37 1.04-.73.13-.36.13-.67.09-.73-.04-.07-.15-.1-.31-.18z"/>
+        <path d="M16 3C9.373 3 4 8.373 4 15c0 2.625.842 5.059 2.273 7.031L4.586 28.414 11 26.727C13.059 27.842 15.466 28.5 16 28.5c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 21.5c-1.5 0-2.968-.343-4.25-.969L10.25 24l-3.75.625.625-3.75.469-1.5C5.843 17.468 5.5 16.266 5.5 15c0-5.238 4.262-9.5 9.5-9.5s9.5 4.262 9.5 9.5-4.262 9.5-9.5 9.5z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TrueCare Hotels, Hospitality, Facilities & Services Pvt Ltd",
+    "url": "https://www.truecarehandf.in",
+    "logo": "https://www.truecarehandf.in/Truecare-logo-2.jpg",
+    "description": "India's most trusted hospitality company with 25+ luxury hotels across major Indian cities, complete event management, hotel management services, and greentech solutions",
+    "foundingDate": "2015",
+    "slogan": "Service with Relentless Integrity",
+    "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+91-8700401489",
-      "contactType": "customer service",
-      "availableLanguage": ["English", "Hindi"]
+      "contactType": "customer service"
     },
-    {
-      "@type": "ContactPoint", 
-      "telephone": "+91-9871626618",
-      "contactType": "sales",
-      "availableLanguage": ["English", "Hindi"]
-    }
-  ],
-  "address": {
-    "@type": "PostalAddress",
-    "addressRegion": "Delhi NCR",
-    "addressCountry": "IN"
-  },
-  "sameAs": [
-    "https://www.facebook.com/Omkar.chaudh/",
-    "https://www.instagram.com/truecarehospitality/"
-  ],
-  "foundingDate": "2020",
-  "numberOfEmployees": "100-250",
-  "slogan": "Service with Relentless Integrity"
-}
-</script>
-
-<!-- JAVASCRIPT -->
-<script>
-// Dark Mode Toggle
-function toggleTheme() {
-  const body = document.body;
-  const currentTheme = body.getAttribute('data-theme');
-  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-  
-  body.setAttribute('data-theme', newTheme);
-  localStorage.setItem('theme', newTheme);
-}
-
-// Initialize theme on load
-document.addEventListener('DOMContentLoaded', function() {
-  const savedTheme = localStorage.getItem('theme') || 'light';
-  document.body.setAttribute('data-theme', savedTheme);
-  
-  // Auto-detect system theme
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && !localStorage.getItem('theme')) {
-    document.body.setAttribute('data-theme', 'dark');
-  }
-});
-
-// Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
-  });
-});
-
-// Form enhancement - Create email body from form data
-document.addEventListener('DOMContentLoaded', function() {
-  const form = document.querySelector('form[action="mailto:wetruecare@gmail.com"]');
-  if (form) {
-    form.addEventListener('submit', function(e) {
-      // Get form data
-      const formData = new FormData(form);
-      let emailBody = "TrueCare Service Request%0D%0A%0D%0A";
-      
-      for (let [key, value] of formData.entries()) {
-        if (value && key !== 'submit') {
-          emailBody += `${key.charAt(0).toUpperCase() + key.slice(1).replace('-', ' ')}: ${value}%0D%0A`;
+    "sameAs": [
+      "https://www.facebook.com/Omkar.chaudh/",
+      "https://www.instagram.com/truecarehospitality/"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "TrueCare Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Hotel Booking Services",
+            "description": "25+ luxury and business hotels across India"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Event Management Services",
+            "description": "Weddings, corporate events, MICE, and destination celebrations"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Hotel Management Services",
+            "description": "Revenue optimization, operations, and consulting"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Greentech Solutions",
+            "description": "STP/ETP/WTP systems and water treatment solutions"
+          }
         }
-      }
-      
-      emailBody += "%0D%0AThank you for contacting TrueCare Hospitality!";
-      
-      // Update mailto link
-      const subject = "Service Request - " + (formData.get('business-division') || 'General Inquiry');
-      form.action = `mailto:wetruecare@gmail.com?subject=${encodeURIComponent(subject)}&body=${emailBody}`;
-    });
+      ]
+    },
+    "areaServed": "India"
   }
-});
-</script>
+  </script>
 
+  <!-- JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Form handling
+      const contactForm = document.getElementById('premiumContactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          const formData = new FormData(this);
+          let emailBody = 'PREMIUM SERVICE REQUEST - TrueCare Hotels, Hospitality, Facilities & Services\\n\\n';
+          emailBody += `Name: ${formData.get('fullName')}\\n`;
+          emailBody += `Email: ${formData.get('emailAddress')}\\n`;
+          emailBody += `Phone: ${formData.get('phoneNumber')}\\n`;
+          emailBody += `Location: ${formData.get('cityLocation')}\\n`;
+          emailBody += `Service: ${formData.get('serviceType')}\\n\\n`;
+          emailBody += `Details: ${formData.get('projectDetails')}\\n`;
+
+          const subject = `PREMIUM SERVICE REQUEST - ${formData.get('serviceType')}`;
+          const mailtoLink = `mailto:wetruecare@gmail.com?subject=${encodeURIComponent(subject)}&body=${emailBody}`;
+
+          const button = this.querySelector('button[type="submit"]');
+          button.textContent = 'Request Sent Successfully!';
+          button.style.background = '#10b981';
+
+          setTimeout(() => {
+            window.open(mailtoLink, '_self');
+            this.reset();
+            button.textContent = 'Get Exclusive Quote';
+            button.style.background = '';
+          }, 1000);
+        });
+      }
+
+      // Header scroll effect
+      const header = document.getElementById('header');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 100) {
+          header.classList.add('header-scrolled');
+        } else {
+          header.classList.remove('header-scrolled');
+        }
+      });
+
+      // Smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            const headerHeight = header.offsetHeight;
+            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
+            window.scrollTo({
+              top: targetPosition,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+
+    // Mobile menu toggle
+    function toggleMobileMenu() {
+      const nav = document.getElementById('mainNav');
+      const button = document.getElementById('mobileMenuBtn');
+      const body = document.body;
+      
+      if (nav && button) {
+        const isOpen = nav.classList.contains('active');
+        nav.classList.toggle('active');
+        body.style.overflow = !isOpen ? 'hidden' : '';
+        button.setAttribute('aria-expanded', !isOpen);
+        button.innerHTML = !isOpen ? '✕' : '<span aria-hidden="true">☰</span>';
+      }
+    }
+  </script>
 </body>
 </html>
